@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>コミック方面 派生5案</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reggae+One&family=Dela+Gothic+One&family=Bangers&family=Yusei+Magic&family=RocknRoll+One&family=Lilita+One&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Noto Sans JP",-apple-system,"Hiragino Sans",sans-serif;-webkit-font-smoothing:antialiased;line-height:1.8}
+body,p,li,h1,h2,h3,span,a,small,div{word-break:auto-phrase;line-break:strict;overflow-wrap:anywhere}
+a{color:inherit;text-decoration:none}
+#stage{min-height:100vh;padding-bottom:110px}
+
+/* 共通レイアウト（各スキンが上書き） */
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px;position:relative;z-index:1}
+header{position:relative;overflow:hidden;padding:56px 0 26px;text-align:center}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:26px 0 40px}
+.card{display:flex;flex-direction:column;gap:8px;padding:18px;transition:transform .14s}
+.cat{align-self:flex-start;font-size:13px;font-weight:900;padding:2px 12px}
+.nm{font-size:21px;font-weight:900;line-height:1.35}
+.nm small{font-family:"Lilita One",sans-serif;font-weight:400;font-size:12.5px;letter-spacing:.1em;margin-left:6px;opacity:.55}
+.ds{font-size:13.5px;flex:1}
+.ft{display:flex;align-items:baseline;gap:6px;padding-top:9px}
+.ft .n{font-family:"Lilita One",sans-serif;font-size:24px}
+.ft .u{font-size:13px;opacity:.75}
+.st{margin-left:auto;font-size:13px;font-weight:900}
+@media(max-width:900px){.grid{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.grid{grid-template-columns:1fr}header{padding-top:44px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* 切替バー */
+#bar{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:99;display:flex;gap:6px;
+  background:#10151C;border-radius:999px;padding:7px;box-shadow:0 14px 34px rgba(0,0,0,.4)}
+#bar button{border:0;background:transparent;color:#93A3B4;font:700 13px/1 "Noto Sans JP",sans-serif;
+  padding:10px 15px;border-radius:999px;cursor:pointer;white-space:nowrap}
+#bar button.on{background:#F2A33C;color:#10151C}
+@media(max-width:640px){#bar{max-width:calc(100vw - 20px);overflow-x:auto}}
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<nav id="bar"></nav>
+
+<script>
+const S=[
+ {n:"Podcast文庫",en:"BUNKO",cat:"PODCAST",desc:"自分の全11番組・700話のPodcastをAIで文字起こしして読み物化。番組棚とタグ検索で、過去の放送が「読める図書館」になった。",num:"700",unit:"話",url:"https://bunko.yuukipodcast.com",b:"pub"},
+ {n:"アニメ台帳",en:"ANIME LEDGER",cat:"コンテンツDB",desc:"観たアニメ870・映画163・サウナ10施設を、Podcastでの言及やカレンダーを証拠に台帳化。「観た」を言い張らずに提示できる。",num:"870",unit:"作品",url:"https://yukitchy.github.io/anime-ledger/",b:"pub"},
+ {n:"撮影クエスト",en:"PHOTO QUEST",cat:"ツアー事業",desc:"秋葉原51スポットの実地撮影の進捗ボード。撮影済みにすると訪日客向けの英語ガイド記事へ写真が自動反映される。",num:"51",unit:"スポット",url:"https://quest.animesenseijp.com",b:"pub"},
+ {n:"ツアー職人",en:"SHOKUNIN",cat:"ツアー事業",desc:"秋葉原アニメツアーの司令塔。ゲスト・行程カード・連絡先・アルバムを一画面で管理し、各販路の予約がここに集まる。",num:"",unit:"予約を一元集約",url:"",b:"loc"},
+ {n:"明君",en:"MEIKUN",cat:"ツアー事業",desc:"体験ホスト向けの予約コントローラー。入金管理・紹介コード・電子同意書・開催日カレンダーまで一体の自作サービス。",num:"",unit:"実予約で運用中",url:"",b:"loc"},
+ {n:"営業代行君",en:"SALES DESK",cat:"ツアー事業",desc:"頼まなくても週1で新しい販路・案件を探して持ってくる営業部門。リード台帳と申請パイプラインをコックピットで管理。",num:"37",unit:"リード台帳",url:"",b:"wip"},
+ {n:"ツクヨム",en:"TSUKUYOMU",cat:"コンテンツDB",desc:"Claudeと考えたラノベキャラを手元のMacで画像生成（費用0円）して台帳化。表紙グリッドの「キャラ図書館」を装丁中。",num:"139",unit:"キャラ生成済み",url:"",b:"wip"},
+ {n:"ネタ帳",en:"KANPE-YA",cat:"PODCAST",desc:"出演8番組の「次回なに話す？」を在庫化。メール・カレンダー・最近の活動からAIが毎朝ネタを自動補充する。",num:"8",unit:"番組ぶんの在庫",url:"",b:"loc"},
+ {n:"ポン出し編集",en:"PON-DASHI",cat:"PODCAST",desc:"収録音源を放り込むだけで無音カット・音量調整・BGM合成まで自動で終わる編集パイプライン。編集をほぼゼロにした。",num:"",unit:"複数番組を自動処理",url:"",b:"loc"},
+ {n:"日本語レッスンDB",en:"LESSON DB",cat:"教育",desc:"オンライン日本語レッスンの板書を、生徒ごとのGoogle Docsに自動生成・蓄積。生徒はいつでも学習記録を見返せる。",num:"",unit:"生徒別に自動生成",url:"",b:"loc"},
+ {n:"PJダッシュボード",en:"PJ DASH",cat:"運用",desc:"並行中のプロジェクト12枠を徒競走のレーンで可視化。「なぜやるか・どこまで来たか・次の一手」が一目で分かる。",num:"12",unit:"枠のWIP管理",url:"",b:"loc"},
+ {n:"秘書室",en:"HISHO-SHITSU",cat:"運用",desc:"散らばる「自分の判断待ち」— 検聴・返信・BOT異常 — を毎朝1画面に集約。通知の洪水でなくプル型で確認する。",num:"",unit:"毎朝8:00に集約",url:"",b:"loc"},
+ {n:"ユウキ1手リスト",en:"1TE LIST",cat:"運用",desc:"全PJのうち「本人にしかできない1手」（DNS・課金・意思決定）だけを抽出。土曜の30分でまとめて消化する。",num:"",unit:"本人待ちを一括消化",url:"",b:"loc"},
+ {n:"カード・マイル戦略",en:"CARD STRATEGY",cat:"暮らし",desc:"クレカとマイルの最適戦略をAIに監査させ、「どのカードで何を払うか」の結論だけを1枚のガイドにした。",num:"",unit:"決済の迷いをゼロに",url:"",b:"loc"},
+];
+const esc=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;");
+const CATC={"PODCAST":"#D6336C","コンテンツDB":"#4263EB","ツアー事業":"#E8590C","教育":"#2B8A3E","運用":"#6741D9","暮らし":"#0B7285"};
+function cards(){return S.map(s=>{
+  const inner=`<span class="cat" style="--cc:${CATC[s.cat]}">${s.cat}</span>
+   <div class="nm">${esc(s.n)}<small>${s.en}</small></div>
+   <p class="ds">${esc(s.desc)}</p>
+   <div class="ft">${s.num?`<b class="n">${s.num}</b>`:""}<span class="u">${s.unit}</span><span class="st ${s.b}">${s.b==="pub"?"見る→":s.b==="wip"?"制作中":"ローカル稼働"}</span></div>`;
+  return s.url?`<a class="card" href="${s.url}" target="_blank" rel="noopener">${inner}</a>`:`<div class="card">${inner}</div>`;
+}).join("")}
+function page(eyebrow,title,lead){return `<div class="wrap">
+<header><span class="eyebrow">${eyebrow}</span><h1>${title}</h1><p class="lead">${lead}</p></header>
+<div class="grid">${cards()}</div></div>`}
+const LEAD="思いつきをぜんぶAIと形にしていったら、暮らしと事業がダッシュボード14個で回るようになった。";
+
+const V={
+
+/* ===== C1 集中線マンガ扉絵 ===== */
+c1:{label:"C1 集中線",css:`
+[data-v=c1]{background:#FFFFFF;color:#1A1613}
+[data-v=c1] header{padding-bottom:34px}
+[data-v=c1] header::before{content:"";position:absolute;inset:-40% -20%;pointer-events:none;z-index:-1;
+  background:repeating-conic-gradient(#1A1613 0deg .6deg,transparent .6deg 7deg);opacity:.07;
+  -webkit-mask-image:radial-gradient(circle at 50% 60%,transparent 34%,#000 78%);mask-image:radial-gradient(circle at 50% 60%,transparent 34%,#000 78%)}
+[data-v=c1] .eyebrow{display:inline-block;font-family:"Lilita One",sans-serif;font-size:14px;letter-spacing:.16em;
+  background:#E03131;color:#fff;padding:4px 16px;transform:rotate(-2deg)}
+[data-v=c1] h1{font-family:"Reggae One",serif;font-weight:400;font-size:clamp(38px,7vw,66px);line-height:1.3;margin:14px 0 6px}
+[data-v=c1] .lead{color:#5C544B;font-size:14.5px;max-width:38em;margin:0 auto}
+[data-v=c1] .card{background:#fff;border:3px solid #1A1613;border-radius:4px;box-shadow:6px 6px 0 rgba(26,22,19,.9)}
+[data-v=c1] a.card:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 rgba(26,22,19,.9)}
+[data-v=c1] .cat{background:#1A1613;color:#fff;letter-spacing:.06em}
+[data-v=c1] .nm{font-family:"Reggae One",serif;font-weight:400}
+[data-v=c1] .ds{color:#5C544B}
+[data-v=c1] .ft{border-top:2px solid #1A1613}
+[data-v=c1] .st.pub{color:#E03131}[data-v=c1] .st.loc{color:#8A8178}[data-v=c1] .st.wip{color:#2B6CB0}
+`,html(){return page("YUKI × CLAUDE WORKS","ユウキの<br>ダッシュボード図鑑",LEAD)}},
+
+/* ===== C2 デラポップ ===== */
+c2:{label:"C2 デラポップ",css:`
+[data-v=c2]{background:#fff;color:#141414}
+[data-v=c2] header{background:#FFD43B;text-align:left;padding:64px 0 44px;border-bottom:4px solid #141414}
+[data-v=c2] header .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+[data-v=c2] header::after{content:"";position:absolute;right:-50px;bottom:-70px;width:230px;height:230px;
+  border-radius:50%;border:26px solid rgba(20,20,20,.1);pointer-events:none}
+[data-v=c2] .eyebrow{font-family:"Lilita One",sans-serif;font-size:15px;letter-spacing:.2em;color:#141414}
+[data-v=c2] h1{font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:clamp(34px,6.2vw,60px);line-height:1.4;margin:10px 0 8px}
+[data-v=c2] .lead{font-size:14.5px;color:#4A4436;max-width:40em}
+[data-v=c2] header,[data-v=c2] header *{text-align:left}
+[data-v=c2] .card{background:#fff;border:3px solid #141414;border-radius:12px;box-shadow:6px 6px 0 #4263EB}
+[data-v=c2] a.card:hover{transform:translate(-2px,-2px);box-shadow:9px 9px 0 #4263EB}
+[data-v=c2] .cat{background:var(--cc);color:#fff;border-radius:999px;border:2px solid #141414}
+[data-v=c2] .nm{font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:18px}
+[data-v=c2] .ds{color:#5A5347}
+[data-v=c2] .ft{border-top:2px dashed #D9D2C2}
+[data-v=c2] .st.pub{color:#4263EB}[data-v=c2] .st.loc{color:#8A8064}[data-v=c2] .st.wip{color:#E8590C}
+`,html(){return page("YUKI × CLAUDE WORKS","ユウキの<br>ダッシュボード図鑑",LEAD)}},
+
+/* ===== C3 アメコミ ===== */
+c3:{label:"C3 アメコミ",css:`
+[data-v=c3]{background:#2B6CB0;color:#141414;
+  background-image:radial-gradient(rgba(255,255,255,.22) 2.4px,transparent 2.4px);background-size:26px 26px}
+[data-v=c3] .eyebrow{font-family:"Bangers",cursive;font-size:20px;letter-spacing:.12em;color:#FFD43B;
+  text-shadow:2px 2px 0 #141414;display:inline-block;transform:rotate(-2deg)}
+[data-v=c3] h1{font-family:"Reggae One",serif;font-weight:400;font-size:clamp(38px,7vw,66px);line-height:1.3;margin:12px 0 8px;
+  color:#fff;-webkit-text-stroke:2px #141414;paint-order:stroke fill;
+  text-shadow:4px 4px 0 #141414,8px 8px 0 rgba(20,20,20,.35)}
+[data-v=c3] .lead{color:#EAF2FB;font-size:14.5px;max-width:38em;margin:0 auto;text-shadow:1px 1px 0 rgba(20,20,20,.5)}
+[data-v=c3] .card{background:#FFF9EE;border:3px solid #141414;border-radius:4px;box-shadow:7px 7px 0 rgba(20,20,20,.85)}
+[data-v=c3] .card:nth-child(3n+1){transform:rotate(-.6deg)}[data-v=c3] .card:nth-child(3n){transform:rotate(.6deg)}
+[data-v=c3] a.card:hover{transform:rotate(0) translateY(-4px)}
+[data-v=c3] .cat{background:#FFD43B;color:#141414;border:2px solid #141414;border-radius:2px;transform:rotate(-1.4deg)}
+[data-v=c3] .nm{font-weight:900}
+[data-v=c3] .ds{color:#57503F}
+[data-v=c3] .ft{border-top:2px solid #141414}
+[data-v=c3] .ft .n{font-family:"Bangers",cursive;font-size:26px}
+[data-v=c3] .st.pub{color:#C92A2A}[data-v=c3] .st.loc{color:#8A8064}[data-v=c3] .st.wip{color:#2B6CB0}
+`,html(){return page("BOOM! ALL SYSTEMS GO!","ユウキの<br>ダッシュボード図鑑",LEAD)}},
+
+/* ===== C4 ステッカーボム ===== */
+c4:{label:"C4 ステッカー",css:`
+[data-v=c4]{background:#C9A876;color:#33291A;
+  background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(0,0,0,.05) 1px,transparent 1px);
+  background-size:7px 7px,11px 11px}
+[data-v=c4] header::before{content:"";position:absolute;top:26px;left:50%;transform:translateX(-50%) rotate(-1.6deg);
+  width:210px;height:30px;background:rgba(255,255,255,.5);pointer-events:none}
+[data-v=c4] .eyebrow{font-family:"Lilita One",sans-serif;font-size:14px;letter-spacing:.18em;color:#6E5A38;position:relative}
+[data-v=c4] h1{font-family:"Yusei Magic",sans-serif;font-weight:400;font-size:clamp(36px,6.6vw,60px);line-height:1.35;margin:14px 0 6px;color:#2C2214}
+[data-v=c4] h1 em{font-style:normal;background:linear-gradient(transparent 58%,#FFD43B 58% 92%,transparent 92%);padding:0 4px}
+[data-v=c4] .lead{color:#5C4C30;font-size:14.5px;max-width:38em;margin:0 auto}
+[data-v=c4] .card{background:#FFFDF8;border-radius:14px;border:2px solid rgba(51,41,26,.25);
+  box-shadow:0 0 0 5px #FFFDF8,0 6px 14px rgba(51,41,26,.35)}
+[data-v=c4] .card:nth-child(4n+1){transform:rotate(-1.1deg)}[data-v=c4] .card:nth-child(4n+3){transform:rotate(1.1deg)}
+[data-v=c4] a.card:hover{transform:rotate(0) translateY(-4px)}
+[data-v=c4] .cat{background:var(--cc);color:#fff;border-radius:999px}
+[data-v=c4] .nm{font-family:"Yusei Magic",sans-serif;font-weight:400}
+[data-v=c4] .ds{color:#6E5F45}
+[data-v=c4] .ft{border-top:2px dotted #D9CBAE}
+[data-v=c4] .st.pub{color:#C2571C;}[data-v=c4] .st.loc{color:#9A8A66}[data-v=c4] .st.wip{color:#3A6EA5}
+`,html(){return page("YUKI × CLAUDE WORKS","ユウキの<em>ダッシュボード</em>図鑑",LEAD)}},
+
+/* ===== C5 純喫茶レトロ ===== */
+c5:{label:"C5 純喫茶",css:`
+[data-v=c5]{background:#F4E9D3;color:#3D2B1A}
+[data-v=c5] header{padding-top:0}
+[data-v=c5] header::before{content:"";display:block;height:26px;margin:0 -20px 42px;
+  background:repeating-linear-gradient(90deg,#D9552F 0 46px,#F4E9D3 46px 92px);border-bottom:3px solid #3D2B1A}
+[data-v=c5] .eyebrow{font-family:"Lilita One",sans-serif;font-size:14px;letter-spacing:.22em;color:#D9552F}
+[data-v=c5] h1{font-family:"RocknRoll One",sans-serif;font-weight:400;font-size:clamp(36px,6.6vw,60px);line-height:1.35;margin:12px 0 6px;color:#3D2B1A}
+[data-v=c5] h1::after{content:"";display:block;width:120px;height:5px;background:#D9552F;border-radius:99px;margin:14px auto 0}
+[data-v=c5] .lead{color:#7A6248;font-size:14.5px;max-width:38em;margin:0 auto}
+[data-v=c5] .card{background:#FBF5E9;border:3px solid #3D2B1A;border-radius:18px 4px 18px 4px;box-shadow:5px 5px 0 rgba(61,43,26,.22)}
+[data-v=c5] a.card:hover{transform:translateY(-4px)}
+[data-v=c5] .cat{background:transparent;color:#D9552F;border:2px solid #D9552F;border-radius:999px}
+[data-v=c5] .nm{font-family:"RocknRoll One",sans-serif;font-weight:400}
+[data-v=c5] .ds{color:#7A6248}
+[data-v=c5] .ft{border-top:2px solid #E4D5B8}
+[data-v=c5] .ft .n{color:#D9552F}
+[data-v=c5] .st.pub{color:#D9552F}[data-v=c5] .st.loc{color:#9A8666}[data-v=c5] .st.wip{color:#3A6EA5}
+`,html(){return page("SINCE 2026 — YUKI × CLAUDE","ユウキの<br>ダッシュボード図鑑",LEAD)}},
+};
+
+const stage=document.getElementById("stage"),bar=document.getElementById("bar");
+let styleEl=document.createElement("style");document.head.appendChild(styleEl);
+function show(k){
+  styleEl.textContent=V[k].css;
+  stage.setAttribute("data-v",k);
+  stage.innerHTML=V[k].html();
+  document.querySelectorAll("#bar button").forEach(b=>b.classList.toggle("on",b.dataset.k===k));
+  try{localStorage.setItem("zukan-c",k)}catch(e){}
+  window.scrollTo(0,0);
+}
+Object.keys(V).forEach(k=>{
+  const b=document.createElement("button");b.dataset.k=k;b.textContent=V[k].label;
+  b.onclick=()=>show(k);bar.appendChild(b);
+});
+let init="c1";try{init=localStorage.getItem("zukan-c")||"c1"}catch(e){}
+show(V[init]?init:"c1");
+</script>
+</body>
+</html>
