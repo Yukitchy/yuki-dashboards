@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>ユウキのダッシュボード図鑑｜AIと作った15のデータまとめサービス</title>
+<link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23F2A33C'/><text x='50' y='54' font-family='Hiragino Sans,sans-serif' font-size='52' font-weight='800' fill='%231A222D' text-anchor='middle' dominant-baseline='central'>盤</text></svg>">
+<meta name="theme-color" content="#1A222D">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#1A222D; --panel:#242F3D; --panel-2:#2B3847;
+  --ink:#EAF0F7; --sub:#9AAABC; --line:#33404F;
+  --accent:#F2A33C; --deco:rgba(255,255,255,.055);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  background:var(--bg); color:var(--ink);
+  font-family:"Noto Sans JP",-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+  line-height:1.85; -webkit-font-smoothing:antialiased;
+}
+body,p,li,h1,h2,h3,span,a,small{word-break:auto-phrase;line-break:strict;overflow-wrap:anywhere}
+h1,h2,h3,.lead{text-wrap:balance}
+p{text-wrap:pretty}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1060px;margin:0 auto;padding:0 20px;position:relative;z-index:1}
+
+/* hero */
+header{position:relative;overflow:hidden;padding:64px 0 40px;border-bottom:1px solid var(--line)}
+header::before{content:"";position:absolute;pointer-events:none;top:-60px;right:-80px;width:280px;height:280px;background:var(--deco);border-radius:0 0 0 100%}
+header::after{content:"";position:absolute;pointer-events:none;bottom:20px;left:-20px;width:200px;height:150px;background-image:radial-gradient(var(--deco) 2.4px,transparent 2.4px);background-size:20px 20px}
+.eyebrow{font-family:"Lilita One",sans-serif;letter-spacing:.16em;color:var(--accent);font-size:15px}
+h1{font-size:clamp(30px,5.4vw,46px);font-weight:900;line-height:1.35;margin:6px 0 10px}
+.lead{color:var(--sub);font-size:15px;max-width:46em}
+.lead b{color:var(--ink)}
+.stats{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:26px}
+.stat .n{font-family:"Lilita One",sans-serif;font-size:32px;color:var(--accent);line-height:1.1;font-variant-numeric:tabular-nums}
+.stat .l{font-size:13px;color:var(--sub)}
+
+/* grid */
+main{padding:38px 0 20px;position:relative;overflow:hidden}
+main::before{content:"";position:absolute;pointer-events:none;top:420px;right:-70px;width:190px;height:190px;border-radius:50%;border:13px solid var(--deco)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{
+  background:var(--panel);border-radius:16px;padding:20px 20px 16px;
+  display:flex;flex-direction:column;gap:10px;
+  transition:transform .16s cubic-bezier(.22,1,.36,1), background .16s ease;
+}
+a.card:hover{transform:translateY(-3px);background:var(--panel-2)}
+.top{display:flex;align-items:center;gap:10px}
+.tile{width:44px;height:44px;border-radius:10px;flex:none;display:grid;place-items:center}
+.tile svg{width:24px;height:24px;fill:none;stroke:#fff;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.chip{font-size:13px;font-weight:700;letter-spacing:.06em;color:var(--sub)}
+.badge{margin-left:auto;font-size:13px;font-weight:700;border-radius:999px;padding:1px 11px;flex:none}
+.badge.pub{background:rgba(242,163,60,.16);color:var(--accent)}
+.badge.loc{background:rgba(154,170,188,.14);color:var(--sub)}
+.badge.wip{background:rgba(120,190,255,.14);color:#8FC7F2}
+h3{font-size:18px;font-weight:900;line-height:1.4}
+h3 small{font-family:"Lilita One",sans-serif;font-weight:400;font-size:13px;color:var(--sub);letter-spacing:.08em;margin-left:7px}
+.card p{font-size:13.5px;color:var(--sub);flex:1}
+.foot{display:flex;align-items:baseline;gap:6px;border-top:1px solid var(--line);padding-top:10px;min-height:34px}
+.foot .n{font-family:"Lilita One",sans-serif;font-size:23px;color:var(--ink);font-variant-numeric:tabular-nums}
+.foot .u{font-size:13px;color:var(--sub)}
+.foot .go{margin-left:auto;font-size:13px;font-weight:700;color:var(--accent)}
+
+/* footer */
+footer{border-top:1px solid var(--line);margin-top:44px;padding:30px 0 46px;color:var(--sub);font-size:13.5px}
+footer a{color:var(--accent);font-weight:700}
+
+/* reveal（1回だけ） */
+.card{animation:in .5s cubic-bezier(.22,1,.36,1) both;animation-timeline:view();animation-range:entry 0% entry 30%}
+@keyframes in{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@supports not (animation-timeline: view()){.card{animation:none;opacity:1}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media(max-width:900px){.grid{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.grid{grid-template-columns:1fr}header{padding-top:48px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow">YUKI DASHBOARD GUIDE</div>
+    <h1>ユウキのダッシュボード図鑑</h1>
+    <p class="lead">思いついた仕組みを <b>AI（Claude）と一緒に作って</b>、いま実際に動いているデータまとめサービスの一覧。予約管理から視聴記録・レッスン板書・家計の期限切れ防止まで、全部この方式で回しています。</p>
+    <div class="stats">
+      <div class="stat"><div class="n">15</div><div class="l">稼働サービス</div></div>
+      <div class="stat"><div class="n">700</div><div class="l">文字起こし済みPodcast</div></div>
+      <div class="stat"><div class="n">870</div><div class="l">台帳化したアニメ</div></div>
+      <div class="stat"><div class="n">51</div><div class="l">秋葉原の撮影スポット</div></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="grid">
+
+      <a class="card" href="https://bunko.yuukipodcast.com" target="_blank" rel="noopener">
+        <div class="top"><div class="tile" style="background:#C05275"><svg viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5V5.5M8 7.5h8M8 11h8"/></svg></div><span class="chip">PODCAST</span><span class="badge pub">公開中</span></div>
+        <h3>Podcast文庫<small>BUNKO</small></h3>
+        <p>自分の全11番組・700話ぶんのPodcastをAIで文字起こしして読み物化。番組棚とタグ検索で、過去の放送が「読める図書館」になった。</p>
+        <div class="foot"><span class="n">700</span><span class="u">話</span><span class="go">開く →</span></div>
+      </a>
+
+      <a class="card" href="https://yukitchy.github.io/anime-ledger/" target="_blank" rel="noopener">
+        <div class="top"><div class="tile" style="background:#5B7FD4"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M8 3l4 3 4-3M8 21h8"/></svg></div><span class="chip">コンテンツDB</span><span class="badge pub">公開中</span></div>
+        <h3>アニメ台帳</h3>
+        <p>これまで観たアニメ870・映画163・行ったサウナ10施設を、Podcastでの言及やカレンダーを証拠に台帳化。「観た」を言い張らずに提示できる。</p>
+        <div class="foot"><span class="n">870</span><span class="u">作品</span><span class="go">開く →</span></div>
+      </a>
+
+      <a class="card" href="https://quest.animesenseijp.com" target="_blank" rel="noopener">
+        <div class="top"><div class="tile" style="background:#D0483E"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13.5" r="3.4"/></svg></div><span class="chip">ツアー事業</span><span class="badge pub">公開中</span></div>
+        <h3>撮影クエスト</h3>
+        <p>秋葉原51スポットの実地撮影の進捗ボード。撮影済みにチェックすると、訪日客向けの英語ガイド記事へ写真が自動反映される。</p>
+        <div class="foot"><span class="n">51</span><span class="u">スポット</span><span class="go">開く →</span></div>
+      </a>
+
+      <div class="card">
+        <div class="top"><div class="tile" style="background:#B8483C"><svg viewBox="0 0 24 24"><path d="M4 20V9l8-5 8 5v11"/><path d="M4 20h16M9 20v-6h6v6"/></svg></div><span class="chip">ツアー事業</span><span class="badge loc">ローカル稼働</span></div>
+        <h3>ツアー職人</h3>
+        <p>秋葉原アニメツアーの司令塔。ゲスト情報・当日の行程カード・連絡先・ツアーアルバムを一画面で管理し、予約は各販路からここに集まる。</p>
+        <div class="foot"><span class="u">Viator・Airbnb等の予約を集約</span></div>
+      </div>
+
+      <div class="card">
+        <div class="top"><div class="tile" style="background:#8A6BC9"><svg viewBox="0 0 24 24"><path d="M5 19l2-13 5 3 5-3 2 13z"/><path d="M5 19h14M9.5 12.5h5"/></svg></div><span class="chip">ツアー事業</span><span class="badge loc">ローカル稼働</span></div>
+        <h3>明君<small>MEIKUN</small></h3>
+        <p>体験ホスト向けの予約コントローラー。入金管理・紹介コード・電子同意書・開催日カレンダーまで一体で、既存サービス（Bokun）への不満から自作した。</p>
+        <div class="foot"><span class="u">実予約でドッグフーディング中</span></div>
+      </div>
+
+      <div class="card">
+        <div class="top"><div class="tile" style="background:#3E4E9E"><svg viewBox="0 0 24 24"><path d="M20 12.5A8 8 0 1 1 11.5 4a6.5 6.5 0 0 0 8.5 8.5z"/></svg></div><span class="chip">コンテンツDB</span><span class="badge wip">制作中</span></div>
+        <h3>ツクヨム</h3>
+        <p>Claudeと考えたラノベキャラクターを、手元のMacで画像生成（費用0円）して台帳化。表紙グリッドで眺められる「キャラクター図書館」を装丁中。</p>
+        <div class="foot"><span class="n">139</span><span class="u">キャラ生成済み</span></div>
+      </div>
+
+      <div class="card">
+        <div class="top"><div class="tile" style="background:#C08A2E"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 7h6M9 11h6M9 15h4"/></svg></div><span class="chip">PODCAST</span><span class="badge loc">ローカル稼働</span></div>
+        <h3>ネタ帳</h3>
+        <p>出演している8番組ぶんの「次回なに話す？」を在庫化。メールやカレンダー・最近の活動からAIが毎朝ネタを自動補充し、収録前の手ぶらを無くした。</p>
+        <div class="foot"><span class="n">8</span><span class="u">番組ぶんの在庫</span></div>
+      </div>
+
+      <div class="card">
+        <div class="top"><div class="tile" style="background:#3E8E7E"><svg viewBox="0 0 24 24"><path d="M4 12h2l2-5 3 10 3-7 2 4h4"/></svg></div><span class="chip">PODCAST</span><span class="badge loc">ローカル稼働</span></div>
+        <h3>ポン出し編集</h3>
+        <p>収録した音源を放り込むだけで、無音カット・音量調整・BGM合成まで自動で終わるPodcast編集パイプライン。編集作業をほぼゼロにした。</p>
+        <div class="foot"><span class="u">複数番組を自動処理</span></div>
+      </div>
+
+      <div class="card">
+        <div class="top"><div class="tile" style="background:#4E7FBF"><svg viewBox="0 0 24 24"><path d="M4 5h16v12H4zM4 17l-1 3h18l-1-3"/><path d="M8 9h8M8 12.5h5"/></svg></div><span class="chip">教育</span><span class="badge loc">生徒と共有</span></div>
+        <h3>日本語レッスンDB</h3>
+        <p>オンライン日本語レッスンの板書を、生徒ごとのGoogle Docsに自動生成・蓄積。生徒はいつでも自分の学習記録を見返せる。</p>
+        <div class="foot"><span class="u">生徒別に自動生成</span></div>
+      </div>
+
+      <div class="card">
+        <div class="top"><div class="tile" style="background:#B9622E"><svg viewBox="0 0 24 24"><path d="M5 4v16M5 5h13l-2.5 3.5L18 12H5"/></svg></div><span class="chip">運用</span><span class="badge loc">ローカル稼働</span></div>
+        <h3>PJダッシュボード</h3>
+        <p>並行中のプロジェクト12枠を徒競走のレーンで可視化。各PJの「なぜやるか・どこまで来たか・次の一手」が一目で分かる。</p>
+        <div class="foot"><span class="n">12</span><span class="u">枠のWIP管理</span></div>
+      </div>
+
+      <div class="card">
+        <div class="top"><div class="tile" style="background:#7E57A8"><svg viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 1 6 6v4l1.5 3h-15L6 13V9a6 6 0 0 1 6-6z"/><path d="M10 19a2 2 0 0 0 4 0"/></svg></div><span class="chip">運用</span><span class="badge loc">毎朝8:00</span></div>
+        <h3>秘書室</h3>
+        <p>あちこちに散らばる「自分の判断待ち」— 検聴待ち・返信待ち・BOTの異常 — を毎朝1画面に集約。通知の洪水でなくプル型で確認する。</p>
+        <div class="foot"><span class="u">全システム横断ビュー</span></div>
+      </div>
+
+      <div class="card">
+        <div class="top"><div class="tile" style="background:#4E9E58"><svg viewBox="0 0 24 24"><path d="M7 12l3.5 3.5L17.5 8"/><rect x="3.5" y="3.5" width="17" height="17" rx="3"/></svg></div><span class="chip">運用</span><span class="badge loc">ローカル稼働</span></div>
+        <h3>ユウキ1手リスト</h3>
+        <p>全プロジェクトのうち「本人にしかできない1手」（DNS設定・課金・意思決定）だけを抽出したリスト。土曜の30分でまとめて消化する。</p>
+        <div class="foot"><span class="u">本人待ちタスクを一括消化</span></div>
+      </div>
+
+      <a class="card" href="https://yukitchy.github.io/quest-board/" target="_blank" rel="noopener">
+        <div class="top"><div class="tile" style="background:#8E6E3E"><svg viewBox="0 0 24 24"><path d="M6 20l6-6M14 4l6 6-8 8-6-6z"/><path d="M4 22l2-2"/></svg></div><span class="chip">運用</span><span class="badge pub">公開中</span></div>
+        <h3>クエスト掲示板</h3>
+        <p>仕事と暮らしのタスクを、狩猟ゲーム風の依頼書UIで管理。AIが日々の会話からクエストを拾って勝手に掲示板へ投函してくる。</p>
+        <div class="foot"><span class="u">AIが自動投函</span><span class="go">開く →</span></div>
+      </a>
+
+      <div class="card">
+        <div class="top"><div class="tile" style="background:#5E8E9E"><svg viewBox="0 0 24 24"><path d="M12 3c4 0 7 3 7 7v11l-2.4-2-2.3 2-2.3-2-2.3 2-2.3-2L5 21V10c0-4 3-7 7-7z"/><circle cx="9.5" cy="10" r=".8"/><circle cx="14.5" cy="10" r=".8"/></svg></div><span class="chip">暮らし</span><span class="badge loc">毎朝リマインド</span></div>
+        <h3>もったいないおばけ</h3>
+        <p>ギフト券・チケット・ポイントの有効期限を台帳化して、切れる前に毎朝知らせてくる。「気づいたら失効してた」を撲滅する係。</p>
+        <div class="foot"><span class="u">期限切れゼロを守る</span></div>
+      </div>
+
+      <div class="card">
+        <div class="top"><div class="tile" style="background:#3E6E5E"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 9.5h18M7 15h4"/></svg></div><span class="chip">暮らし</span><span class="badge loc">結論ガイド</span></div>
+        <h3>カード・マイル戦略</h3>
+        <p>クレジットカードとマイルの最適戦略をAIに監査させ、「どのカードで何を払うか」の結論だけを1枚のガイドにしたもの。迷いが消えた。</p>
+        <div class="foot"><span class="u">決済の迷いをゼロに</span></div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>2026年8月時点。ぜんぶ Claude（AI）との共作で、企画から実装・運用まで会話ベースで作っています。</p>
+    <p>姉妹ページ: <a href="https://program.yuukipodcast.com/" target="_blank" rel="noopener">ユウキのPodcast番組表</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
