@@ -1,0 +1,4673 @@
+{
+ "generated": "2026-10-10",
+ "n_books": 70,
+ "n_published": 47,
+ "counts": {
+  "ok": 65,
+  "up": 2,
+  "down": 3
+ },
+ "next3": [
+  "n5-gacha-no-panda",
+  "n4-hajimete-no-chikatetsu",
+  "n1-koe-no-ishitsubutsu"
+ ],
+ "levels": [
+  {
+   "level": "N5",
+   "n": 16,
+   "n_draft": 3,
+   "chars": 320,
+   "mean": 12.1,
+   "p90": 18.0,
+   "kanji_ratio": 0.14829,
+   "polite": 0.94643,
+   "kanji_types": 25,
+   "gram_own": 5.6,
+   "neq": 5.15,
+   "v2_n": 19,
+   "ok": 15,
+   "up": 0,
+   "down": 1,
+   "outliers": [
+    "n5-gacha-no-panda"
+   ],
+   "v2": {
+    "mean": "11〜13字",
+    "p90": "18字以内",
+    "kanji": "約20%",
+    "polite": "約70%以上"
+   },
+   "tadoku_levels": [
+    "0",
+    "1"
+   ]
+  },
+  {
+   "level": "N4",
+   "n": 16,
+   "n_draft": 3,
+   "chars": 572,
+   "mean": 16.4,
+   "p90": 24.9,
+   "kanji_ratio": 0.17329,
+   "polite": 0.94131,
+   "kanji_types": 46,
+   "gram_own": 10.7,
+   "neq": 3.81,
+   "v2_n": 22,
+   "ok": 15,
+   "up": 1,
+   "down": 0,
+   "outliers": [
+    "n4-hajimete-no-chikatetsu"
+   ],
+   "v2": {
+    "mean": "14〜16字",
+    "p90": "27字以内",
+    "kanji": "20〜25%",
+    "polite": "約75%以上"
+   },
+   "tadoku_levels": [
+    "1",
+    "2"
+   ]
+  },
+  {
+   "level": "N3",
+   "n": 14,
+   "n_draft": 6,
+   "chars": 993,
+   "mean": 20.2,
+   "p90": 31.2,
+   "kanji_ratio": 0.24249,
+   "polite": 0.90724,
+   "kanji_types": 114,
+   "gram_own": 9.5,
+   "neq": 2.97,
+   "v2_n": 9,
+   "ok": 13,
+   "up": 1,
+   "down": 0,
+   "outliers": [
+    "n3-ato-gofun-no-jihanki"
+   ],
+   "v2": {
+    "mean": "約21字",
+    "p90": "33字以内",
+    "kanji": "約25%",
+    "polite": "約80%以上"
+   },
+   "tadoku_levels": [
+    "3"
+   ]
+  },
+  {
+   "level": "N2",
+   "n": 13,
+   "n_draft": 6,
+   "chars": 1710,
+   "mean": 22.7,
+   "p90": 37.6,
+   "kanji_ratio": 0.2849,
+   "polite": 0.05645,
+   "kanji_types": 211,
+   "gram_own": 9.4,
+   "neq": 2.26,
+   "v2_n": 4,
+   "ok": 13,
+   "up": 0,
+   "down": 0,
+   "outliers": [],
+   "v2": {
+    "mean": "約25字",
+    "p90": "42字以内",
+    "kanji": "26〜28%",
+    "polite": "なし"
+   },
+   "tadoku_levels": [
+    "4"
+   ]
+  },
+  {
+   "level": "N1",
+   "n": 11,
+   "n_draft": 5,
+   "chars": 2056,
+   "mean": 22.9,
+   "p90": 38.5,
+   "kanji_ratio": 0.31554,
+   "polite": 0.13451,
+   "kanji_types": 262,
+   "gram_own": 7.9,
+   "neq": 2.26,
+   "v2_n": 0,
+   "ok": 9,
+   "up": 0,
+   "down": 2,
+   "outliers": [
+    "n1-koe-no-ishitsubutsu",
+    "n1-reizouko-no-harigami"
+   ],
+   "v2": {
+    "mean": "26字以上",
+    "p90": "42字以上",
+    "kanji": "なし",
+    "polite": "なし"
+   },
+   "tadoku_levels": []
+  }
+ ],
+ "books": [
+  {
+   "slug": "n1-akiya-no-meter",
+   "title": "空き家のメーター",
+   "titleEn": "The Meter at the Empty House",
+   "level": "N1",
+   "genre": "true-ish",
+   "draft": false,
+   "chars": 2068,
+   "sentences": 89,
+   "mean": 23.24,
+   "p90": 38,
+   "kanji_ratio": 0.3114,
+   "kanji_types": 267,
+   "polite": 0.1461,
+   "gram_by_level": {
+    "N5": 31,
+    "N4": 42,
+    "N3": 20,
+    "N2": 11,
+    "N1": 9
+   },
+   "gram_own": 9,
+   "gram_above": 0,
+   "gram_n4plus": 82,
+   "v2_warn": [],
+   "axes": {
+    "mean": {
+     "value": 23.24,
+     "L": 3.548,
+     "neq": 2.452,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 38,
+     "L": 3.579,
+     "neq": 2.421,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 267,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 82,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    }
+   },
+   "L": 3.782,
+   "neq": 2.218,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 0,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n1-kamihikoukidou-no-saigo-no-issatsu",
+   "title": "紙ひこうき堂の最後の一冊",
+   "titleEn": "The Last Copy of Paper Airplane Press",
+   "level": "N1",
+   "genre": "anime-otaku",
+   "draft": true,
+   "chars": 2069,
+   "sentences": 81,
+   "mean": 25.54,
+   "p90": 46,
+   "kanji_ratio": 0.3161,
+   "kanji_types": 266,
+   "polite": 0.0123,
+   "gram_by_level": {
+    "N5": 23,
+    "N4": 44,
+    "N3": 29,
+    "N2": 9,
+    "N1": 12
+   },
+   "gram_own": 12,
+   "gram_above": 0,
+   "gram_n4plus": 94,
+   "v2_warn": [],
+   "axes": {
+    "mean": {
+     "value": 25.54,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 46,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 266,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 94,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    }
+   },
+   "L": 4.0,
+   "neq": 2.0,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 0,
+   "ok_url": false,
+   "live": false
+  },
+  {
+   "slug": "n1-koe-no-ishitsubutsu",
+   "title": "声の遺失物",
+   "titleEn": "The Lost Voice",
+   "level": "N1",
+   "genre": "strange",
+   "draft": false,
+   "chars": 2049,
+   "sentences": 108,
+   "mean": 18.97,
+   "p90": 32,
+   "kanji_ratio": 0.2918,
+   "kanji_types": 227,
+   "polite": 0.2037,
+   "gram_by_level": {
+    "N5": 24,
+    "N4": 35,
+    "N3": 22,
+    "N2": 9,
+    "N1": 7
+   },
+   "gram_own": 7,
+   "gram_above": 0,
+   "gram_n4plus": 73,
+   "v2_warn": [],
+   "axes": {
+    "mean": {
+     "value": 18.97,
+     "L": 2.663,
+     "neq": 3.225,
+     "j": "down"
+    },
+    "p90": {
+     "value": 32,
+     "L": 2.909,
+     "neq": 3.061,
+     "j": "down"
+    },
+    "kt": {
+     "value": 227,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 73,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    }
+   },
+   "L": 3.393,
+   "neq": 2.607,
+   "j": "down",
+   "dev": 0.107,
+   "v2_n": 0,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n1-mokuyoubi-no-ribatsuten",
+   "title": "木曜日の理髪店",
+   "titleEn": "The Barber Shop on Thursdays",
+   "level": "N1",
+   "genre": "slice-of-life",
+   "draft": true,
+   "chars": 2047,
+   "sentences": 96,
+   "mean": 21.32,
+   "p90": 36,
+   "kanji_ratio": 0.2882,
+   "kanji_types": 240,
+   "polite": 0.2708,
+   "gram_by_level": {
+    "N5": 30,
+    "N4": 38,
+    "N3": 21,
+    "N2": 7,
+    "N1": 11
+   },
+   "gram_own": 11,
+   "gram_above": 0,
+   "gram_n4plus": 77,
+   "v2_warn": [],
+   "axes": {
+    "mean": {
+     "value": 21.32,
+     "L": 3.123,
+     "neq": 2.877,
+     "j": "down"
+    },
+    "p90": {
+     "value": 36,
+     "L": 3.368,
+     "neq": 2.632,
+     "j": "down"
+    },
+    "kt": {
+     "value": 240,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 77,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    }
+   },
+   "L": 3.623,
+   "neq": 2.377,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 0,
+   "ok_url": false,
+   "live": false
+  },
+  {
+   "slug": "n1-nengajou-jimai",
+   "title": "年賀状じまい",
+   "titleEn": "The Last New Year Cards",
+   "level": "N1",
+   "genre": "slice-of-life",
+   "draft": false,
+   "chars": 2024,
+   "sentences": 88,
+   "mean": 23.0,
+   "p90": 39,
+   "kanji_ratio": 0.3375,
+   "kanji_types": 258,
+   "polite": 0.0795,
+   "gram_by_level": {
+    "N5": 22,
+    "N4": 40,
+    "N3": 30,
+    "N2": 9,
+    "N1": 7
+   },
+   "gram_own": 7,
+   "gram_above": 0,
+   "gram_n4plus": 86,
+   "v2_warn": [],
+   "axes": {
+    "mean": {
+     "value": 23.0,
+     "L": 3.495,
+     "neq": 2.505,
+     "j": "down"
+    },
+    "p90": {
+     "value": 39,
+     "L": 3.684,
+     "neq": 2.316,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 258,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 86,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    }
+   },
+   "L": 3.795,
+   "neq": 2.205,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 0,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n1-reizouko-no-harigami",
+   "title": "冷蔵庫の貼り紙",
+   "titleEn": "The Notes on the Office Fridge",
+   "level": "N1",
+   "genre": "funny",
+   "draft": true,
+   "chars": 2074,
+   "sentences": 107,
+   "mean": 19.38,
+   "p90": 34,
+   "kanji_ratio": 0.3177,
+   "kanji_types": 279,
+   "polite": 0.0935,
+   "gram_by_level": {
+    "N5": 22,
+    "N4": 38,
+    "N3": 23,
+    "N2": 10,
+    "N1": 8
+   },
+   "gram_own": 8,
+   "gram_above": 0,
+   "gram_n4plus": 79,
+   "v2_warn": [],
+   "axes": {
+    "mean": {
+     "value": 19.38,
+     "L": 2.74,
+     "neq": 3.173,
+     "j": "down"
+    },
+    "p90": {
+     "value": 34,
+     "L": 3.158,
+     "neq": 2.842,
+     "j": "down"
+    },
+    "kt": {
+     "value": 279,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 79,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    }
+   },
+   "L": 3.474,
+   "neq": 2.526,
+   "j": "down",
+   "dev": 0.026,
+   "v2_n": 0,
+   "ok_url": false,
+   "live": false
+  },
+  {
+   "slug": "n1-sotomawari-no-seki",
+   "title": "外回りの席",
+   "titleEn": "The Seat on the Outer Loop",
+   "level": "N1",
+   "genre": "tokyo",
+   "draft": true,
+   "chars": 2041,
+   "sentences": 98,
+   "mean": 20.83,
+   "p90": 37,
+   "kanji_ratio": 0.3386,
+   "kanji_types": 286,
+   "polite": 0.1327,
+   "gram_by_level": {
+    "N5": 21,
+    "N4": 30,
+    "N3": 23,
+    "N2": 7,
+    "N1": 8
+   },
+   "gram_own": 8,
+   "gram_above": 0,
+   "gram_n4plus": 68,
+   "v2_warn": [],
+   "axes": {
+    "mean": {
+     "value": 20.83,
+     "L": 3.015,
+     "neq": 2.985,
+     "j": "down"
+    },
+    "p90": {
+     "value": 37,
+     "L": 3.474,
+     "neq": 2.526,
+     "j": "down"
+    },
+    "kt": {
+     "value": 286,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 68,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    }
+   },
+   "L": 3.622,
+   "neq": 2.378,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 0,
+   "ok_url": false,
+   "live": false
+  },
+  {
+   "slug": "n1-tofuya-no-saigo-no-asa",
+   "title": "豆腐屋の最後の朝",
+   "titleEn": "The Tofu Maker's Last Morning",
+   "level": "N1",
+   "genre": "food",
+   "draft": true,
+   "chars": 2079,
+   "sentences": 83,
+   "mean": 25.05,
+   "p90": 40,
+   "kanji_ratio": 0.3439,
+   "kanji_types": 294,
+   "polite": 0.1205,
+   "gram_by_level": {
+    "N5": 20,
+    "N4": 46,
+    "N3": 20,
+    "N2": 11,
+    "N1": 8
+   },
+   "gram_own": 8,
+   "gram_above": 0,
+   "gram_n4plus": 85,
+   "v2_warn": [],
+   "axes": {
+    "mean": {
+     "value": 25.05,
+     "L": 3.948,
+     "neq": 2.052,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 40,
+     "L": 3.789,
+     "neq": 2.211,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 294,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 85,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    }
+   },
+   "L": 3.934,
+   "neq": 2.066,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 0,
+   "ok_url": false,
+   "live": false
+  },
+  {
+   "slug": "n1-tomatta-tokei",
+   "title": "止まった時計",
+   "titleEn": "The Watch That Stopped",
+   "level": "N1",
+   "genre": "strange",
+   "draft": false,
+   "chars": 2041,
+   "sentences": 97,
+   "mean": 21.04,
+   "p90": 33,
+   "kanji_ratio": 0.3204,
+   "kanji_types": 230,
+   "polite": 0.1753,
+   "gram_by_level": {
+    "N5": 22,
+    "N4": 41,
+    "N3": 11,
+    "N2": 7,
+    "N1": 6
+   },
+   "gram_own": 6,
+   "gram_above": 0,
+   "gram_n4plus": 65,
+   "v2_warn": [],
+   "axes": {
+    "mean": {
+     "value": 21.04,
+     "L": 3.061,
+     "neq": 2.939,
+     "j": "down"
+    },
+    "p90": {
+     "value": 33,
+     "L": 3.053,
+     "neq": 2.947,
+     "j": "down"
+    },
+    "kt": {
+     "value": 230,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 65,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    }
+   },
+   "L": 3.528,
+   "neq": 2.472,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 0,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n1-urashima-taro",
+   "title": "浦島太郎",
+   "titleEn": "Urashima Taro",
+   "level": "N1",
+   "genre": "folk-tale",
+   "draft": false,
+   "chars": 2079,
+   "sentences": 82,
+   "mean": 25.35,
+   "p90": 42,
+   "kanji_ratio": 0.3016,
+   "kanji_types": 298,
+   "polite": 0.1341,
+   "gram_by_level": {
+    "N5": 20,
+    "N4": 29,
+    "N3": 17,
+    "N2": 12,
+    "N1": 1
+   },
+   "gram_own": 1,
+   "gram_above": 0,
+   "gram_n4plus": 59,
+   "v2_warn": [],
+   "axes": {
+    "mean": {
+     "value": 25.35,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 42,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 298,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 59,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    }
+   },
+   "L": 4.0,
+   "neq": 2.0,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 0,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n1-yuki-onna",
+   "title": "雪女",
+   "titleEn": "The Snow Woman",
+   "level": "N1",
+   "genre": "folk-tale",
+   "draft": false,
+   "chars": 2045,
+   "sentences": 72,
+   "mean": 28.4,
+   "p90": 47,
+   "kanji_ratio": 0.3037,
+   "kanji_types": 241,
+   "polite": 0.1111,
+   "gram_by_level": {
+    "N5": 22,
+    "N4": 40,
+    "N3": 22,
+    "N2": 9,
+    "N1": 10
+   },
+   "gram_own": 10,
+   "gram_above": 0,
+   "gram_n4plus": 81,
+   "v2_warn": [],
+   "axes": {
+    "mean": {
+     "value": 28.4,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 47,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 241,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 81,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    }
+   },
+   "L": 4.0,
+   "neq": 2.0,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 0,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n2-aikagi-no-mise",
+   "title": "合鍵の店",
+   "titleEn": "The Spare Key Shop",
+   "level": "N2",
+   "genre": "slice-of-life",
+   "draft": true,
+   "chars": 1611,
+   "sentences": 80,
+   "mean": 20.14,
+   "p90": 35,
+   "kanji_ratio": 0.2924,
+   "kanji_types": 203,
+   "polite": 0.1125,
+   "gram_by_level": {
+    "N5": 23,
+    "N4": 40,
+    "N3": 13,
+    "N2": 12,
+    "N1": 1
+   },
+   "gram_own": 12,
+   "gram_above": 1,
+   "gram_n4plus": 66,
+   "v2_warn": [],
+   "axes": {
+    "mean": {
+     "value": 20.14,
+     "L": 2.883,
+     "neq": 3.078,
+     "j": "down"
+    },
+    "p90": {
+     "value": 35,
+     "L": 3.263,
+     "neq": 2.737,
+     "j": "down"
+    },
+    "kt": {
+     "value": 203,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 66,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    }
+   },
+   "L": 3.536,
+   "neq": 2.464,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 0,
+   "ok_url": false,
+   "live": false
+  },
+  {
+   "slug": "n2-furuhonya-no-shiori",
+   "title": "古本屋のしおり",
+   "titleEn": "The Bookmark from the Used Bookshop",
+   "level": "N2",
+   "genre": "true-ish",
+   "draft": false,
+   "chars": 1529,
+   "sentences": 68,
+   "mean": 22.49,
+   "p90": 40,
+   "kanji_ratio": 0.3022,
+   "kanji_types": 199,
+   "polite": 0.0735,
+   "gram_by_level": {
+    "N5": 18,
+    "N4": 32,
+    "N3": 15,
+    "N2": 9,
+    "N1": 1
+   },
+   "gram_own": 9,
+   "gram_above": 1,
+   "gram_n4plus": 57,
+   "v2_warn": [],
+   "axes": {
+    "mean": {
+     "value": 22.49,
+     "L": 3.382,
+     "neq": 2.618,
+     "j": "down"
+    },
+    "p90": {
+     "value": 40,
+     "L": 3.789,
+     "neq": 2.211,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 199,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 57,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    }
+   },
+   "L": 3.793,
+   "neq": 2.207,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 0,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n2-hanasaka-jiisan",
+   "title": "花咲かじいさん",
+   "titleEn": "The Old Man Who Made Trees Bloom",
+   "level": "N2",
+   "genre": "folk-tale",
+   "draft": true,
+   "chars": 1932,
+   "sentences": 80,
+   "mean": 24.15,
+   "p90": 43,
+   "kanji_ratio": 0.278,
+   "kanji_types": 234,
+   "polite": 0.05,
+   "gram_by_level": {
+    "N5": 16,
+    "N4": 38,
+    "N3": 21,
+    "N2": 9,
+    "N1": 3
+   },
+   "gram_own": 9,
+   "gram_above": 3,
+   "gram_n4plus": 71,
+   "v2_warn": [
+    "v2 文長P90 43字（N2 は 42字まで）"
+   ],
+   "axes": {
+    "mean": {
+     "value": 24.15,
+     "L": 3.749,
+     "neq": 2.251,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 43,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 234,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 71,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    }
+   },
+   "L": 3.937,
+   "neq": 2.063,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 1,
+   "ok_url": false,
+   "live": false
+  },
+  {
+   "slug": "n2-hikkoshi-no-mae-no-yoru",
+   "title": "引っ越しの前の夜",
+   "titleEn": "The Night Before Moving",
+   "level": "N2",
+   "genre": "anime-otaku",
+   "draft": false,
+   "chars": 1561,
+   "sentences": 62,
+   "mean": 25.18,
+   "p90": 40,
+   "kanji_ratio": 0.2947,
+   "kanji_types": 219,
+   "polite": 0.0,
+   "gram_by_level": {
+    "N5": 25,
+    "N4": 31,
+    "N3": 24,
+    "N2": 6,
+    "N1": 2
+   },
+   "gram_own": 5,
+   "gram_above": 2,
+   "gram_n4plus": 63,
+   "v2_warn": [
+    "v2 平均文長 25.2字（N2 は 25字まで）"
+   ],
+   "axes": {
+    "mean": {
+     "value": 25.18,
+     "L": 3.977,
+     "neq": 2.023,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 40,
+     "L": 3.789,
+     "neq": 2.211,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 219,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 63,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    }
+   },
+   "L": 3.942,
+   "neq": 2.058,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 1,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n2-kezuribushi-no-asa",
+   "title": "削り節の朝",
+   "titleEn": "Morning of the Bonito Shavings",
+   "level": "N2",
+   "genre": "food",
+   "draft": false,
+   "chars": 1587,
+   "sentences": 74,
+   "mean": 21.45,
+   "p90": 33,
+   "kanji_ratio": 0.2993,
+   "kanji_types": 213,
+   "polite": 0.0405,
+   "gram_by_level": {
+    "N5": 20,
+    "N4": 37,
+    "N3": 11,
+    "N2": 12,
+    "N1": 2
+   },
+   "gram_own": 12,
+   "gram_above": 2,
+   "gram_n4plus": 62,
+   "v2_warn": [],
+   "axes": {
+    "mean": {
+     "value": 21.45,
+     "L": 3.152,
+     "neq": 2.848,
+     "j": "down"
+    },
+    "p90": {
+     "value": 33,
+     "L": 3.053,
+     "neq": 2.947,
+     "j": "down"
+    },
+    "kt": {
+     "value": 213,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 62,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    }
+   },
+   "L": 3.551,
+   "neq": 2.449,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 0,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n2-rokuga-no-naka-no-kyaku",
+   "title": "録画の中の客",
+   "titleEn": "The Passenger on the Recording",
+   "level": "N2",
+   "genre": "scary",
+   "draft": true,
+   "chars": 1673,
+   "sentences": 80,
+   "mean": 20.91,
+   "p90": 35,
+   "kanji_ratio": 0.2857,
+   "kanji_types": 225,
+   "polite": 0.0,
+   "gram_by_level": {
+    "N5": 17,
+    "N4": 31,
+    "N3": 17,
+    "N2": 9,
+    "N1": 2
+   },
+   "gram_own": 8,
+   "gram_above": 2,
+   "gram_n4plus": 59,
+   "v2_warn": [],
+   "axes": {
+    "mean": {
+     "value": 20.91,
+     "L": 3.032,
+     "neq": 2.968,
+     "j": "down"
+    },
+    "p90": {
+     "value": 35,
+     "L": 3.263,
+     "neq": 2.737,
+     "j": "down"
+    },
+    "kt": {
+     "value": 225,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 59,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    }
+   },
+   "L": 3.574,
+   "neq": 2.426,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 0,
+   "ok_url": false,
+   "live": false
+  },
+  {
+   "slug": "n2-saishuuwa-no-mae-no-yoru",
+   "title": "最終話の前の夜",
+   "titleEn": "The Night Before the Finale",
+   "level": "N2",
+   "genre": "anime-otaku",
+   "draft": true,
+   "chars": 1571,
+   "sentences": 73,
+   "mean": 21.52,
+   "p90": 33,
+   "kanji_ratio": 0.3329,
+   "kanji_types": 207,
+   "polite": 0.0274,
+   "gram_by_level": {
+    "N5": 21,
+    "N4": 35,
+    "N3": 11,
+    "N2": 9,
+    "N1": 6
+   },
+   "gram_own": 9,
+   "gram_above": 6,
+   "gram_n4plus": 61,
+   "v2_warn": [],
+   "axes": {
+    "mean": {
+     "value": 21.52,
+     "L": 3.167,
+     "neq": 2.833,
+     "j": "down"
+    },
+    "p90": {
+     "value": 33,
+     "L": 3.053,
+     "neq": 2.947,
+     "j": "down"
+    },
+    "kt": {
+     "value": 207,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 61,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    }
+   },
+   "L": 3.555,
+   "neq": 2.445,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 0,
+   "ok_url": false,
+   "live": false
+  },
+  {
+   "slug": "n2-setsuei-no-asa",
+   "title": "設営の朝",
+   "titleEn": "Setting Up Before the Doors Open",
+   "level": "N2",
+   "genre": "anime-otaku",
+   "draft": false,
+   "chars": 1740,
+   "sentences": 79,
+   "mean": 22.03,
+   "p90": 34,
+   "kanji_ratio": 0.2989,
+   "kanji_types": 223,
+   "polite": 0.0633,
+   "gram_by_level": {
+    "N5": 21,
+    "N4": 35,
+    "N3": 16,
+    "N2": 10,
+    "N1": 1
+   },
+   "gram_own": 10,
+   "gram_above": 1,
+   "gram_n4plus": 62,
+   "v2_warn": [],
+   "axes": {
+    "mean": {
+     "value": 22.03,
+     "L": 3.28,
+     "neq": 2.72,
+     "j": "down"
+    },
+    "p90": {
+     "value": 34,
+     "L": 3.158,
+     "neq": 2.842,
+     "j": "down"
+    },
+    "kt": {
+     "value": 223,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 62,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    }
+   },
+   "L": 3.61,
+   "neq": 2.39,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 0,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n2-shitakiri-suzume",
+   "title": "舌切り雀",
+   "titleEn": "The Tongue-Cut Sparrow",
+   "level": "N2",
+   "genre": "folk-tale",
+   "draft": false,
+   "chars": 1850,
+   "sentences": 76,
+   "mean": 24.34,
+   "p90": 38,
+   "kanji_ratio": 0.2227,
+   "kanji_types": 196,
+   "polite": 0.0658,
+   "gram_by_level": {
+    "N5": 20,
+    "N4": 36,
+    "N3": 16,
+    "N2": 7,
+    "N1": 2
+   },
+   "gram_own": 7,
+   "gram_above": 2,
+   "gram_n4plus": 61,
+   "v2_warn": [],
+   "axes": {
+    "mean": {
+     "value": 24.34,
+     "L": 3.791,
+     "neq": 2.209,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 38,
+     "L": 3.579,
+     "neq": 2.421,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 196,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 61,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    }
+   },
+   "L": 3.843,
+   "neq": 2.157,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 0,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n2-shuuden-no-atode",
+   "title": "終電のあとで",
+   "titleEn": "After the Last Train",
+   "level": "N2",
+   "genre": "strange",
+   "draft": false,
+   "chars": 1550,
+   "sentences": 65,
+   "mean": 23.85,
+   "p90": 38,
+   "kanji_ratio": 0.2665,
+   "kanji_types": 185,
+   "polite": 0.0923,
+   "gram_by_level": {
+    "N5": 21,
+    "N4": 40,
+    "N3": 23,
+    "N2": 3,
+    "N1": 3
+   },
+   "gram_own": 3,
+   "gram_above": 3,
+   "gram_n4plus": 69,
+   "v2_warn": [],
+   "axes": {
+    "mean": {
+     "value": 23.85,
+     "L": 3.683,
+     "neq": 2.317,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 38,
+     "L": 3.579,
+     "neq": 2.421,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 185,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 69,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    }
+   },
+   "L": 3.815,
+   "neq": 2.185,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 0,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n2-sofu-to-hako",
+   "title": "祖父と箱",
+   "titleEn": "Grandpa and the Box",
+   "level": "N2",
+   "genre": "funny",
+   "draft": true,
+   "chars": 2107,
+   "sentences": 95,
+   "mean": 22.18,
+   "p90": 40,
+   "kanji_ratio": 0.272,
+   "kanji_types": 216,
+   "polite": 0.0632,
+   "gram_by_level": {
+    "N5": 21,
+    "N4": 49,
+    "N3": 18,
+    "N2": 13,
+    "N1": 6
+   },
+   "gram_own": 13,
+   "gram_above": 6,
+   "gram_n4plus": 86,
+   "v2_warn": [],
+   "axes": {
+    "mean": {
+     "value": 22.18,
+     "L": 3.313,
+     "neq": 2.687,
+     "j": "down"
+    },
+    "p90": {
+     "value": 40,
+     "L": 3.789,
+     "neq": 2.211,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 216,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 86,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    }
+   },
+   "L": 3.776,
+   "neq": 2.224,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 0,
+   "ok_url": false,
+   "live": false
+  },
+  {
+   "slug": "n2-takuhai-box-no-juuyonban",
+   "title": "宅配ボックスの十四番",
+   "titleEn": "Parcel Locker Number Fourteen",
+   "level": "N2",
+   "genre": "scary",
+   "draft": true,
+   "chars": 1914,
+   "sentences": 76,
+   "mean": 25.18,
+   "p90": 44,
+   "kanji_ratio": 0.278,
+   "kanji_types": 203,
+   "polite": 0.1316,
+   "gram_by_level": {
+    "N5": 26,
+    "N4": 32,
+    "N3": 16,
+    "N2": 11,
+    "N1": 2
+   },
+   "gram_own": 11,
+   "gram_above": 2,
+   "gram_n4plus": 61,
+   "v2_warn": [
+    "v2 平均文長 25.2字（N2 は 25字まで）",
+    "v2 文長P90 44字（N2 は 42字まで）"
+   ],
+   "axes": {
+    "mean": {
+     "value": 25.18,
+     "L": 3.977,
+     "neq": 2.023,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 44,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 203,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 61,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    }
+   },
+   "L": 3.994,
+   "neq": 2.006,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 2,
+   "ok_url": false,
+   "live": false
+  },
+  {
+   "slug": "n2-umeboshi-no-bin",
+   "title": "梅干しの瓶",
+   "titleEn": "The Jar of Pickled Plums",
+   "level": "N2",
+   "genre": "food",
+   "draft": false,
+   "chars": 1601,
+   "sentences": 73,
+   "mean": 21.93,
+   "p90": 36,
+   "kanji_ratio": 0.2804,
+   "kanji_types": 215,
+   "polite": 0.0137,
+   "gram_by_level": {
+    "N5": 33,
+    "N4": 37,
+    "N3": 25,
+    "N2": 14,
+    "N1": 3
+   },
+   "gram_own": 14,
+   "gram_above": 3,
+   "gram_n4plus": 79,
+   "v2_warn": [],
+   "axes": {
+    "mean": {
+     "value": 21.93,
+     "L": 3.258,
+     "neq": 2.742,
+     "j": "down"
+    },
+    "p90": {
+     "value": 36,
+     "L": 3.368,
+     "neq": 2.632,
+     "j": "down"
+    },
+    "kt": {
+     "value": 215,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 79,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "ok"
+    }
+   },
+   "L": 3.657,
+   "neq": 2.343,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 0,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n3-ato-gofun-no-jihanki",
+   "title": "あと五分の自動販売機",
+   "titleEn": "The Five-More-Minutes Vending Machine",
+   "level": "N3",
+   "genre": "strange",
+   "draft": false,
+   "chars": 1305,
+   "sentences": 61,
+   "mean": 21.39,
+   "p90": 34,
+   "kanji_ratio": 0.2636,
+   "kanji_types": 143,
+   "polite": 0.9016,
+   "gram_by_level": {
+    "N5": 25,
+    "N4": 33,
+    "N3": 11,
+    "N2": 3,
+    "N1": 3
+   },
+   "gram_own": 11,
+   "gram_above": 6,
+   "gram_n4plus": 50,
+   "v2_warn": [
+    "v2 平均文長 21.4字（N3 は 21字まで）",
+    "v2 文長P90 34字（N3 は 33字まで）"
+   ],
+   "axes": {
+    "mean": {
+     "value": 21.39,
+     "L": 3.139,
+     "neq": 2.861,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 34,
+     "L": 3.158,
+     "neq": 2.842,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 143,
+     "L": 3.778,
+     "neq": 2.222,
+     "j": "up"
+    },
+    "g4": {
+     "value": 50,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "up"
+    }
+   },
+   "L": 3.519,
+   "neq": 2.481,
+   "j": "up",
+   "dev": 0.019,
+   "v2_n": 2,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n3-fanart-no-henji",
+   "title": "ファンアートの返事",
+   "titleEn": "The Reply to My Fan Art",
+   "level": "N3",
+   "genre": "anime-otaku",
+   "draft": true,
+   "chars": 809,
+   "sentences": 37,
+   "mean": 21.86,
+   "p90": 32,
+   "kanji_ratio": 0.2373,
+   "kanji_types": 98,
+   "polite": 1.0,
+   "gram_by_level": {
+    "N5": 20,
+    "N4": 22,
+    "N3": 10,
+    "N2": 1,
+    "N1": 0
+   },
+   "gram_own": 9,
+   "gram_above": 1,
+   "gram_n4plus": 33,
+   "v2_warn": [
+    "v2 平均文長 21.9字（N3 は 21字まで）"
+   ],
+   "axes": {
+    "mean": {
+     "value": 21.86,
+     "L": 3.243,
+     "neq": 2.757,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 32,
+     "L": 2.909,
+     "neq": 3.061,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 98,
+     "L": 2.551,
+     "neq": 3.3,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 33,
+     "L": 3.353,
+     "neq": 2.647,
+     "j": "ok"
+    }
+   },
+   "L": 3.014,
+   "neq": 2.986,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 1,
+   "ok_url": false,
+   "live": false
+  },
+  {
+   "slug": "n3-heiten-sale-no-bunguten",
+   "title": "閉店セールの文具店",
+   "titleEn": "The Stationery Shop's Closing Sale",
+   "level": "N3",
+   "genre": "true-ish",
+   "draft": true,
+   "chars": 900,
+   "sentences": 42,
+   "mean": 21.43,
+   "p90": 32,
+   "kanji_ratio": 0.2544,
+   "kanji_types": 118,
+   "polite": 0.8095,
+   "gram_by_level": {
+    "N5": 21,
+    "N4": 24,
+    "N3": 9,
+    "N2": 1,
+    "N1": 1
+   },
+   "gram_own": 8,
+   "gram_above": 2,
+   "gram_n4plus": 35,
+   "v2_warn": [
+    "v2 平均文長 21.4字（N3 は 21字まで）"
+   ],
+   "axes": {
+    "mean": {
+     "value": 21.43,
+     "L": 3.147,
+     "neq": 2.853,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 32,
+     "L": 2.909,
+     "neq": 3.061,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 118,
+     "L": 2.841,
+     "neq": 3.106,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 35,
+     "L": 3.471,
+     "neq": 2.529,
+     "j": "ok"
+    }
+   },
+   "L": 3.092,
+   "neq": 2.908,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 1,
+   "ok_url": false,
+   "live": false
+  },
+  {
+   "slug": "n3-hitodan-ooi-kaidan",
+   "title": "一段多い階段",
+   "titleEn": "The Extra Step",
+   "level": "N3",
+   "genre": "scary",
+   "draft": false,
+   "chars": 866,
+   "sentences": 46,
+   "mean": 18.83,
+   "p90": 33,
+   "kanji_ratio": 0.2333,
+   "kanji_types": 86,
+   "polite": 0.913,
+   "gram_by_level": {
+    "N5": 20,
+    "N4": 20,
+    "N3": 13,
+    "N2": 1,
+    "N1": 2
+   },
+   "gram_own": 12,
+   "gram_above": 3,
+   "gram_n4plus": 36,
+   "v2_warn": [],
+   "axes": {
+    "mean": {
+     "value": 18.83,
+     "L": 2.637,
+     "neq": 3.242,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 33,
+     "L": 3.053,
+     "neq": 2.947,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 86,
+     "L": 2.377,
+     "neq": 3.415,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 36,
+     "L": 3.529,
+     "neq": 2.471,
+     "j": "up"
+    }
+   },
+   "L": 2.899,
+   "neq": 3.067,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 0,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n3-kachou-sokkuri-no-inko",
+   "title": "課長そっくりのインコ",
+   "titleEn": "The Parrot Who Sounded Just Like My Boss",
+   "level": "N3",
+   "genre": "funny",
+   "draft": true,
+   "chars": 960,
+   "sentences": 49,
+   "mean": 19.59,
+   "p90": 32,
+   "kanji_ratio": 0.2427,
+   "kanji_types": 92,
+   "polite": 0.8163,
+   "gram_by_level": {
+    "N5": 16,
+    "N4": 21,
+    "N3": 10,
+    "N2": 1,
+    "N1": 0
+   },
+   "gram_own": 10,
+   "gram_above": 1,
+   "gram_n4plus": 32,
+   "v2_warn": [],
+   "axes": {
+    "mean": {
+     "value": 19.59,
+     "L": 2.779,
+     "neq": 3.147,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 32,
+     "L": 2.909,
+     "neq": 3.061,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 92,
+     "L": 2.464,
+     "neq": 3.357,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 32,
+     "L": 3.294,
+     "neq": 2.706,
+     "j": "ok"
+    }
+   },
+   "L": 2.862,
+   "neq": 3.092,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 0,
+   "ok_url": false,
+   "live": false
+  },
+  {
+   "slug": "n3-kairanban-ga-tomatta-ie",
+   "title": "回覧板が止まった家",
+   "titleEn": "The House Where the Circular Stopped",
+   "level": "N3",
+   "genre": "true-ish",
+   "draft": true,
+   "chars": 869,
+   "sentences": 39,
+   "mean": 22.28,
+   "p90": 37,
+   "kanji_ratio": 0.2969,
+   "kanji_types": 130,
+   "polite": 0.8974,
+   "gram_by_level": {
+    "N5": 16,
+    "N4": 20,
+    "N3": 12,
+    "N2": 0,
+    "N1": 0
+   },
+   "gram_own": 12,
+   "gram_above": 0,
+   "gram_n4plus": 32,
+   "v2_warn": [
+    "v2 平均文長 22.3字（N3 は 21字まで）",
+    "v2 文長P90 37字（N3 は 33字まで）"
+   ],
+   "axes": {
+    "mean": {
+     "value": 22.28,
+     "L": 3.335,
+     "neq": 2.665,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 37,
+     "L": 3.474,
+     "neq": 2.526,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 130,
+     "L": 3.056,
+     "neq": 2.944,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 32,
+     "L": 3.294,
+     "neq": 2.706,
+     "j": "ok"
+    }
+   },
+   "L": 3.29,
+   "neq": 2.71,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 2,
+   "ok_url": false,
+   "live": false
+  },
+  {
+   "slug": "n3-kyuujitsu-no-ryokan-bangohan",
+   "title": "休日の旅館の晩ごはん",
+   "titleEn": "Dinner at the Hot Spring Inn",
+   "level": "N3",
+   "genre": "funny",
+   "draft": false,
+   "chars": 975,
+   "sentences": 58,
+   "mean": 16.81,
+   "p90": 26,
+   "kanji_ratio": 0.2164,
+   "kanji_types": 100,
+   "polite": 0.8448,
+   "gram_by_level": {
+    "N5": 17,
+    "N4": 19,
+    "N3": 9,
+    "N2": 2,
+    "N1": 1
+   },
+   "gram_own": 9,
+   "gram_above": 3,
+   "gram_n4plus": 31,
+   "v2_warn": [],
+   "axes": {
+    "mean": {
+     "value": 16.81,
+     "L": 2.257,
+     "neq": 3.495,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 26,
+     "L": 1.8,
+     "neq": 3.8,
+     "j": "down"
+    },
+    "kt": {
+     "value": 100,
+     "L": 2.58,
+     "neq": 3.28,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 31,
+     "L": 3.235,
+     "neq": 2.765,
+     "j": "ok"
+    }
+   },
+   "L": 2.468,
+   "neq": 3.355,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 0,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n3-nukadoko-wo-azukatta-isshuukan",
+   "title": "ぬか床を預かった一週間",
+   "titleEn": "A Week with the Rice-Bran Bed",
+   "level": "N3",
+   "genre": "food",
+   "draft": true,
+   "chars": 919,
+   "sentences": 44,
+   "mean": 20.89,
+   "p90": 28,
+   "kanji_ratio": 0.2459,
+   "kanji_types": 121,
+   "polite": 1.0,
+   "gram_by_level": {
+    "N5": 18,
+    "N4": 29,
+    "N3": 12,
+    "N2": 1,
+    "N1": 3
+   },
+   "gram_own": 11,
+   "gram_above": 4,
+   "gram_n4plus": 45,
+   "v2_warn": [],
+   "axes": {
+    "mean": {
+     "value": 20.89,
+     "L": 3.028,
+     "neq": 2.972,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 28,
+     "L": 2.182,
+     "neq": 3.545,
+     "j": "down"
+    },
+    "kt": {
+     "value": 121,
+     "L": 2.884,
+     "neq": 3.077,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 45,
+     "L": 4.0,
+     "neq": 2.0,
+     "j": "up"
+    }
+   },
+   "L": 3.023,
+   "neq": 2.977,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 0,
+   "ok_url": false,
+   "live": false
+  },
+  {
+   "slug": "n3-seichi-junrei-no-densha",
+   "title": "聖地巡礼の電車",
+   "titleEn": "The Pilgrimage Train",
+   "level": "N3",
+   "genre": "anime-otaku",
+   "draft": false,
+   "chars": 884,
+   "sentences": 41,
+   "mean": 21.56,
+   "p90": 32,
+   "kanji_ratio": 0.2172,
+   "kanji_types": 111,
+   "polite": 0.878,
+   "gram_by_level": {
+    "N5": 16,
+    "N4": 25,
+    "N3": 8,
+    "N2": 0,
+    "N1": 1
+   },
+   "gram_own": 7,
+   "gram_above": 1,
+   "gram_n4plus": 34,
+   "v2_warn": [
+    "v2 平均文長 21.6字（N3 は 21字まで）"
+   ],
+   "axes": {
+    "mean": {
+     "value": 21.56,
+     "L": 3.176,
+     "neq": 2.824,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 32,
+     "L": 2.909,
+     "neq": 3.061,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 111,
+     "L": 2.739,
+     "neq": 3.174,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 34,
+     "L": 3.412,
+     "neq": 2.588,
+     "j": "ok"
+    }
+   },
+   "L": 3.059,
+   "neq": 2.941,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 1,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n3-sentou-no-fujisan",
+   "title": "銭湯の富士山",
+   "titleEn": "Mount Fuji at the Public Bath",
+   "level": "N3",
+   "genre": "tokyo",
+   "draft": false,
+   "chars": 944,
+   "sentences": 51,
+   "mean": 18.51,
+   "p90": 25,
+   "kanji_ratio": 0.2394,
+   "kanji_types": 123,
+   "polite": 0.8824,
+   "gram_by_level": {
+    "N5": 19,
+    "N4": 22,
+    "N3": 10,
+    "N2": 1,
+    "N1": 1
+   },
+   "gram_own": 9,
+   "gram_above": 2,
+   "gram_n4plus": 34,
+   "v2_warn": [],
+   "axes": {
+    "mean": {
+     "value": 18.51,
+     "L": 2.577,
+     "neq": 3.282,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 25,
+     "L": 1.6,
+     "neq": 3.933,
+     "j": "down"
+    },
+    "kt": {
+     "value": 123,
+     "L": 2.913,
+     "neq": 3.058,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 34,
+     "L": 3.412,
+     "neq": 2.588,
+     "j": "ok"
+    }
+   },
+   "L": 2.625,
+   "neq": 3.25,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 0,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n3-teiryuujo-no-te",
+   "title": "手をふる停留場",
+   "titleEn": "The Stop Where Someone Waves",
+   "level": "N3",
+   "genre": "tokyo",
+   "draft": false,
+   "chars": 1178,
+   "sentences": 58,
+   "mean": 20.31,
+   "p90": 32,
+   "kanji_ratio": 0.2615,
+   "kanji_types": 112,
+   "polite": 0.8621,
+   "gram_by_level": {
+    "N5": 15,
+    "N4": 23,
+    "N3": 7,
+    "N2": 1,
+    "N1": 0
+   },
+   "gram_own": 7,
+   "gram_above": 1,
+   "gram_n4plus": 31,
+   "v2_warn": [],
+   "axes": {
+    "mean": {
+     "value": 20.31,
+     "L": 2.915,
+     "neq": 3.057,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 32,
+     "L": 2.909,
+     "neq": 3.061,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 112,
+     "L": 2.754,
+     "neq": 3.164,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 31,
+     "L": 3.235,
+     "neq": 2.765,
+     "j": "ok"
+    }
+   },
+   "L": 2.953,
+   "neq": 3.031,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 0,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n3-tonari-no-heya-no-okayu",
+   "title": "隣の部屋のおかゆ",
+   "titleEn": "Porridge from Next Door",
+   "level": "N3",
+   "genre": "slice-of-life",
+   "draft": false,
+   "chars": 941,
+   "sentences": 48,
+   "mean": 19.6,
+   "p90": 29,
+   "kanji_ratio": 0.2115,
+   "kanji_types": 108,
+   "polite": 1.0,
+   "gram_by_level": {
+    "N5": 21,
+    "N4": 26,
+    "N3": 7,
+    "N2": 0,
+    "N1": 1
+   },
+   "gram_own": 7,
+   "gram_above": 1,
+   "gram_n4plus": 34,
+   "v2_warn": [],
+   "axes": {
+    "mean": {
+     "value": 19.6,
+     "L": 2.781,
+     "neq": 3.146,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 29,
+     "L": 2.364,
+     "neq": 3.424,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 108,
+     "L": 2.696,
+     "neq": 3.203,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 34,
+     "L": 3.412,
+     "neq": 2.588,
+     "j": "ok"
+    }
+   },
+   "L": 2.813,
+   "neq": 3.125,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 0,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n3-tsuru-no-ongaeshi",
+   "title": "鶴の恩返し",
+   "titleEn": "The Crane's Gift of Thanks",
+   "level": "N3",
+   "genre": "folk-tale",
+   "draft": false,
+   "chars": 1132,
+   "sentences": 49,
+   "mean": 23.1,
+   "p90": 38,
+   "kanji_ratio": 0.2164,
+   "kanji_types": 121,
+   "polite": 0.9796,
+   "gram_by_level": {
+    "N5": 21,
+    "N4": 30,
+    "N3": 10,
+    "N2": 1,
+    "N1": 0
+   },
+   "gram_own": 9,
+   "gram_above": 1,
+   "gram_n4plus": 41,
+   "v2_warn": [
+    "v2 平均文長 23.1字（N3 は 21字まで）",
+    "v2 文長P90 38字（N3 は 33字まで）"
+   ],
+   "axes": {
+    "mean": {
+     "value": 23.1,
+     "L": 3.517,
+     "neq": 2.483,
+     "j": "up"
+    },
+    "p90": {
+     "value": 38,
+     "L": 3.579,
+     "neq": 2.421,
+     "j": "up"
+    },
+    "kt": {
+     "value": 121,
+     "L": 2.884,
+     "neq": 3.077,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 41,
+     "L": 3.824,
+     "neq": 2.176,
+     "j": "up"
+    }
+   },
+   "L": 3.451,
+   "neq": 2.549,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 2,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n3-warashibe-choja",
+   "title": "わらしべ長者",
+   "titleEn": "The Straw Millionaire",
+   "level": "N3",
+   "genre": "folk-tale",
+   "draft": true,
+   "chars": 1223,
+   "sentences": 72,
+   "mean": 16.99,
+   "p90": 27,
+   "kanji_ratio": 0.2584,
+   "kanji_types": 138,
+   "polite": 0.9167,
+   "gram_by_level": {
+    "N5": 18,
+    "N4": 22,
+    "N3": 12,
+    "N2": 2,
+    "N1": 2
+   },
+   "gram_own": 12,
+   "gram_above": 4,
+   "gram_n4plus": 38,
+   "v2_warn": [],
+   "axes": {
+    "mean": {
+     "value": 16.99,
+     "L": 2.291,
+     "neq": 3.473,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 27,
+     "L": 2.0,
+     "neq": 3.667,
+     "j": "down"
+    },
+    "kt": {
+     "value": 138,
+     "L": 3.5,
+     "neq": 2.5,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 38,
+     "L": 3.647,
+     "neq": 2.353,
+     "j": "up"
+    }
+   },
+   "L": 2.86,
+   "neq": 3.094,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 0,
+   "ok_url": false,
+   "live": false
+  },
+  {
+   "slug": "n4-ashita-yuki-no-basu",
+   "title": "明日行きのバス",
+   "titleEn": "The Bus to Tomorrow",
+   "level": "N4",
+   "genre": "strange",
+   "draft": false,
+   "chars": 600,
+   "sentences": 35,
+   "mean": 17.14,
+   "p90": 25,
+   "kanji_ratio": 0.2,
+   "kanji_types": 61,
+   "polite": 0.9714,
+   "gram_by_level": {
+    "N5": 17,
+    "N4": 17,
+    "N3": 4,
+    "N2": 2,
+    "N1": 0
+   },
+   "gram_own": 15,
+   "gram_above": 6,
+   "gram_n4plus": 23,
+   "v2_warn": [
+    "v2 平均文長 17.1字（N4 は 16字まで）"
+   ],
+   "axes": {
+    "mean": {
+     "value": 17.14,
+     "L": 2.319,
+     "neq": 3.454,
+     "j": "up"
+    },
+    "p90": {
+     "value": 25,
+     "L": 1.6,
+     "neq": 3.933,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 61,
+     "L": 2.014,
+     "neq": 3.657,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 23,
+     "L": 2.742,
+     "neq": 3.172,
+     "j": "up"
+    }
+   },
+   "L": 2.169,
+   "neq": 3.554,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 1,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n4-bunbuku-chagama",
+   "title": "ぶんぶく茶がま",
+   "titleEn": "The Bunbuku Teakettle",
+   "level": "N4",
+   "genre": "folk-tale",
+   "draft": false,
+   "chars": 504,
+   "sentences": 33,
+   "mean": 15.27,
+   "p90": 20,
+   "kanji_ratio": 0.1766,
+   "kanji_types": 35,
+   "polite": 0.9091,
+   "gram_by_level": {
+    "N5": 10,
+    "N4": 15,
+    "N3": 1,
+    "N2": 0,
+    "N1": 0
+   },
+   "gram_own": 11,
+   "gram_above": 1,
+   "gram_n4plus": 16,
+   "v2_warn": [
+    "v2 漢字割合 18%（N4 は 18%以上が目安）"
+   ],
+   "axes": {
+    "mean": {
+     "value": 15.27,
+     "L": 1.911,
+     "neq": 3.726,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 20,
+     "L": 0.6,
+     "neq": 4.9,
+     "j": "down"
+    },
+    "kt": {
+     "value": 35,
+     "L": 0.526,
+     "neq": 4.974,
+     "j": "down"
+    },
+    "g4": {
+     "value": 16,
+     "L": 2.29,
+     "neq": 3.473,
+     "j": "up"
+    }
+   },
+   "L": 1.332,
+   "neq": 4.168,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 1,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n4-coin-laundry-no-sensei",
+   "title": "コインランドリーの先生",
+   "titleEn": "The Laundromat Teacher",
+   "level": "N4",
+   "genre": "slice-of-life",
+   "draft": false,
+   "chars": 642,
+   "sentences": 39,
+   "mean": 16.46,
+   "p90": 25,
+   "kanji_ratio": 0.1807,
+   "kanji_types": 62,
+   "polite": 0.9744,
+   "gram_by_level": {
+    "N5": 16,
+    "N4": 17,
+    "N3": 3,
+    "N2": 0,
+    "N1": 1
+   },
+   "gram_own": 13,
+   "gram_above": 4,
+   "gram_n4plus": 21,
+   "v2_warn": [
+    "v2 平均文長 16.5字（N4 は 16字まで）"
+   ],
+   "axes": {
+    "mean": {
+     "value": 16.46,
+     "L": 2.191,
+     "neq": 3.539,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 25,
+     "L": 1.6,
+     "neq": 3.933,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 62,
+     "L": 2.029,
+     "neq": 3.647,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 21,
+     "L": 2.613,
+     "neq": 3.258,
+     "j": "up"
+    }
+   },
+   "L": 2.108,
+   "neq": 3.594,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 1,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n4-eki-de-atta-hito",
+   "title": "駅で会った人",
+   "titleEn": "The Person I Met at the Station",
+   "level": "N4",
+   "genre": "tokyo",
+   "draft": false,
+   "chars": 424,
+   "sentences": 24,
+   "mean": 17.67,
+   "p90": 32,
+   "kanji_ratio": 0.1627,
+   "kanji_types": 42,
+   "polite": 0.9583,
+   "gram_by_level": {
+    "N5": 13,
+    "N4": 13,
+    "N3": 1,
+    "N2": 0,
+    "N1": 0
+   },
+   "gram_own": 8,
+   "gram_above": 1,
+   "gram_n4plus": 14,
+   "v2_warn": [
+    "v2 平均文長 17.7字（N4 は 16字まで）",
+    "v2 文長P90 32字（N4 は 27字まで）",
+    "v2 漢字割合 16%（N4 は 18%以上が目安）"
+   ],
+   "axes": {
+    "mean": {
+     "value": 17.67,
+     "L": 2.419,
+     "neq": 3.387,
+     "j": "up"
+    },
+    "p90": {
+     "value": 32,
+     "L": 2.909,
+     "neq": 3.061,
+     "j": "up"
+    },
+    "kt": {
+     "value": 42,
+     "L": 0.895,
+     "neq": 4.605,
+     "j": "down"
+    },
+    "g4": {
+     "value": 14,
+     "L": 2.161,
+     "neq": 3.559,
+     "j": "ok"
+    }
+   },
+   "L": 2.096,
+   "neq": 3.603,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 3,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n4-fan-no-hatsu-event",
+   "title": "はじめてのイベント",
+   "titleEn": "My First Anime Event",
+   "level": "N4",
+   "genre": "anime-otaku",
+   "draft": false,
+   "chars": 446,
+   "sentences": 27,
+   "mean": 16.52,
+   "p90": 24,
+   "kanji_ratio": 0.157,
+   "kanji_types": 39,
+   "polite": 1.0,
+   "gram_by_level": {
+    "N5": 12,
+    "N4": 9,
+    "N3": 1,
+    "N2": 0,
+    "N1": 1
+   },
+   "gram_own": 7,
+   "gram_above": 2,
+   "gram_n4plus": 11,
+   "v2_warn": [
+    "v2 平均文長 16.5字（N4 は 16字まで）",
+    "v2 漢字割合 16%（N4 は 18%以上が目安）"
+   ],
+   "axes": {
+    "mean": {
+     "value": 16.52,
+     "L": 2.203,
+     "neq": 3.531,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 24,
+     "L": 1.4,
+     "neq": 4.1,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 39,
+     "L": 0.737,
+     "neq": 4.763,
+     "j": "down"
+    },
+    "g4": {
+     "value": 11,
+     "L": 1.947,
+     "neq": 3.702,
+     "j": "ok"
+    }
+   },
+   "L": 1.572,
+   "neq": 3.952,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 2,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n4-hajimete-no-chikatetsu",
+   "title": "はじめての地下鉄",
+   "titleEn": "My First Time on the Subway",
+   "level": "N4",
+   "genre": "tokyo",
+   "draft": false,
+   "chars": 596,
+   "sentences": 29,
+   "mean": 20.55,
+   "p90": 29,
+   "kanji_ratio": 0.2013,
+   "kanji_types": 61,
+   "polite": 0.9655,
+   "gram_by_level": {
+    "N5": 13,
+    "N4": 18,
+    "N3": 2,
+    "N2": 0,
+    "N1": 2
+   },
+   "gram_own": 16,
+   "gram_above": 4,
+   "gram_n4plus": 22,
+   "v2_warn": [
+    "v2 平均文長 20.6字（N4 は 16字まで）",
+    "v2 文長P90 29字（N4 は 27字まで）"
+   ],
+   "axes": {
+    "mean": {
+     "value": 20.55,
+     "L": 2.96,
+     "neq": 3.027,
+     "j": "up"
+    },
+    "p90": {
+     "value": 29,
+     "L": 2.364,
+     "neq": 3.424,
+     "j": "up"
+    },
+    "kt": {
+     "value": 61,
+     "L": 2.014,
+     "neq": 3.657,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 22,
+     "L": 2.677,
+     "neq": 3.215,
+     "j": "up"
+    }
+   },
+   "L": 2.504,
+   "neq": 3.331,
+   "j": "up",
+   "dev": 0.169,
+   "v2_n": 2,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n4-kabe-no-mukou-no-oto",
+   "title": "かべのむこうの音",
+   "titleEn": "The Sound Behind the Wall",
+   "level": "N4",
+   "genre": "scary",
+   "draft": true,
+   "chars": 670,
+   "sentences": 47,
+   "mean": 14.26,
+   "p90": 23,
+   "kanji_ratio": 0.1522,
+   "kanji_types": 38,
+   "polite": 0.8936,
+   "gram_by_level": {
+    "N5": 16,
+    "N4": 14,
+    "N3": 1,
+    "N2": 0,
+    "N1": 1
+   },
+   "gram_own": 11,
+   "gram_above": 2,
+   "gram_n4plus": 16,
+   "v2_warn": [
+    "v2 漢字割合 15%（N4 は 18%以上が目安）"
+   ],
+   "axes": {
+    "mean": {
+     "value": 14.26,
+     "L": 1.384,
+     "neq": 4.116,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 23,
+     "L": 1.2,
+     "neq": 4.3,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 38,
+     "L": 0.684,
+     "neq": 4.816,
+     "j": "down"
+    },
+    "g4": {
+     "value": 16,
+     "L": 2.29,
+     "neq": 3.473,
+     "j": "up"
+    }
+   },
+   "L": 1.39,
+   "neq": 4.11,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 1,
+   "ok_url": false,
+   "live": false
+  },
+  {
+   "slug": "n4-kasa-jizo",
+   "title": "かさじぞう",
+   "titleEn": "Kasa Jizo: The Straw Hat Statues",
+   "level": "N4",
+   "genre": "folk-tale",
+   "draft": false,
+   "chars": 615,
+   "sentences": 40,
+   "mean": 15.38,
+   "p90": 25,
+   "kanji_ratio": 0.135,
+   "kanji_types": 49,
+   "polite": 0.9,
+   "gram_by_level": {
+    "N5": 14,
+    "N4": 9,
+    "N3": 1,
+    "N2": 0,
+    "N1": 1
+   },
+   "gram_own": 6,
+   "gram_above": 2,
+   "gram_n4plus": 11,
+   "v2_warn": [
+    "v2 漢字割合 13%（N4 は 18%以上が目安）"
+   ],
+   "axes": {
+    "mean": {
+     "value": 15.38,
+     "L": 1.968,
+     "neq": 3.688,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 25,
+     "L": 1.6,
+     "neq": 3.933,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 49,
+     "L": 1.312,
+     "neq": 4.188,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 11,
+     "L": 1.947,
+     "neq": 3.702,
+     "j": "ok"
+    }
+   },
+   "L": 1.707,
+   "neq": 3.862,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 1,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n4-nanatsu-no-mezamashi",
+   "title": "七つの目ざまし時計",
+   "titleEn": "Seven Alarm Clocks",
+   "level": "N4",
+   "genre": "funny",
+   "draft": true,
+   "chars": 586,
+   "sentences": 37,
+   "mean": 15.84,
+   "p90": 22,
+   "kanji_ratio": 0.2048,
+   "kanji_types": 41,
+   "polite": 1.0,
+   "gram_by_level": {
+    "N5": 15,
+    "N4": 11,
+    "N3": 3,
+    "N2": 0,
+    "N1": 2
+   },
+   "gram_own": 9,
+   "gram_above": 5,
+   "gram_n4plus": 16,
+   "v2_warn": [],
+   "axes": {
+    "mean": {
+     "value": 15.84,
+     "L": 2.075,
+     "neq": 3.617,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 22,
+     "L": 1.0,
+     "neq": 4.5,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 41,
+     "L": 0.842,
+     "neq": 4.658,
+     "j": "down"
+    },
+    "g4": {
+     "value": 16,
+     "L": 2.29,
+     "neq": 3.473,
+     "j": "up"
+    }
+   },
+   "L": 1.552,
+   "neq": 3.965,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 0,
+   "ok_url": false,
+   "live": false
+  },
+  {
+   "slug": "n4-onaji-hon-no-hito",
+   "title": "同じ本の人",
+   "titleEn": "The Person with the Same Book",
+   "level": "N4",
+   "genre": "true-ish",
+   "draft": false,
+   "chars": 580,
+   "sentences": 41,
+   "mean": 14.15,
+   "p90": 20,
+   "kanji_ratio": 0.2224,
+   "kanji_types": 49,
+   "polite": 0.9756,
+   "gram_by_level": {
+    "N5": 19,
+    "N4": 13,
+    "N3": 4,
+    "N2": 1,
+    "N1": 1
+   },
+   "gram_own": 9,
+   "gram_above": 6,
+   "gram_n4plus": 19,
+   "v2_warn": [],
+   "axes": {
+    "mean": {
+     "value": 14.15,
+     "L": 1.327,
+     "neq": 4.173,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 20,
+     "L": 0.6,
+     "neq": 4.9,
+     "j": "down"
+    },
+    "kt": {
+     "value": 49,
+     "L": 1.312,
+     "neq": 4.188,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 19,
+     "L": 2.484,
+     "neq": 3.344,
+     "j": "up"
+    }
+   },
+   "L": 1.431,
+   "neq": 4.069,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 0,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n4-ramen-ya-no-mae-de",
+   "title": "ラーメン屋の前で",
+   "titleEn": "In Front of the Ramen Shop",
+   "level": "N4",
+   "genre": "food",
+   "draft": false,
+   "chars": 457,
+   "sentences": 25,
+   "mean": 18.28,
+   "p90": 28,
+   "kanji_ratio": 0.1772,
+   "kanji_types": 38,
+   "polite": 0.8,
+   "gram_by_level": {
+    "N5": 12,
+    "N4": 16,
+    "N3": 1,
+    "N2": 2,
+    "N1": 1
+   },
+   "gram_own": 12,
+   "gram_above": 4,
+   "gram_n4plus": 20,
+   "v2_warn": [
+    "v2 平均文長 18.3字（N4 は 16字まで）",
+    "v2 文長P90 28字（N4 は 27字まで）",
+    "v2 漢字割合 18%（N4 は 18%以上が目安）"
+   ],
+   "axes": {
+    "mean": {
+     "value": 18.28,
+     "L": 2.533,
+     "neq": 3.311,
+     "j": "up"
+    },
+    "p90": {
+     "value": 28,
+     "L": 2.182,
+     "neq": 3.545,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 38,
+     "L": 0.684,
+     "neq": 4.816,
+     "j": "down"
+    },
+    "g4": {
+     "value": 20,
+     "L": 2.548,
+     "neq": 3.301,
+     "j": "up"
+    }
+   },
+   "L": 1.987,
+   "neq": 3.675,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 3,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n4-sanma-wo-yaku-hi",
+   "title": "さんまを やく日",
+   "titleEn": "The Day I Grilled Saury",
+   "level": "N4",
+   "genre": "food",
+   "draft": true,
+   "chars": 606,
+   "sentences": 34,
+   "mean": 17.82,
+   "p90": 25,
+   "kanji_ratio": 0.1799,
+   "kanji_types": 53,
+   "polite": 1.0,
+   "gram_by_level": {
+    "N5": 12,
+    "N4": 9,
+    "N3": 3,
+    "N2": 1,
+    "N1": 1
+   },
+   "gram_own": 7,
+   "gram_above": 5,
+   "gram_n4plus": 14,
+   "v2_warn": [
+    "v2 平均文長 17.8字（N4 は 16字まで）",
+    "v2 漢字割合 18%（N4 は 18%以上が目安）"
+   ],
+   "axes": {
+    "mean": {
+     "value": 17.82,
+     "L": 2.447,
+     "neq": 3.369,
+     "j": "up"
+    },
+    "p90": {
+     "value": 25,
+     "L": 1.6,
+     "neq": 3.933,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 53,
+     "L": 1.562,
+     "neq": 3.958,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 14,
+     "L": 2.161,
+     "neq": 3.559,
+     "j": "ok"
+    }
+   },
+   "L": 1.943,
+   "neq": 3.705,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 2,
+   "ok_url": false,
+   "live": false
+  },
+  {
+   "slug": "n4-soujiki-to-neko",
+   "title": "そうじロボットとねこ",
+   "titleEn": "The Robot Vacuum and the Cat",
+   "level": "N4",
+   "genre": "funny",
+   "draft": false,
+   "chars": 725,
+   "sentences": 44,
+   "mean": 16.48,
+   "p90": 25,
+   "kanji_ratio": 0.1145,
+   "kanji_types": 43,
+   "polite": 0.8182,
+   "gram_by_level": {
+    "N5": 12,
+    "N4": 15,
+    "N3": 3,
+    "N2": 0,
+    "N1": 0
+   },
+   "gram_own": 12,
+   "gram_above": 3,
+   "gram_n4plus": 18,
+   "v2_warn": [
+    "v2 平均文長 16.5字（N4 は 16字まで）",
+    "v2 漢字割合 11%（N4 は 18%以上が目安）"
+   ],
+   "axes": {
+    "mean": {
+     "value": 16.48,
+     "L": 2.195,
+     "neq": 3.536,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 25,
+     "L": 1.6,
+     "neq": 3.933,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 43,
+     "L": 0.947,
+     "neq": 4.553,
+     "j": "down"
+    },
+    "g4": {
+     "value": 18,
+     "L": 2.419,
+     "neq": 3.387,
+     "j": "up"
+    }
+   },
+   "L": 1.79,
+   "neq": 3.806,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 2,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n4-wasureta-kasa",
+   "title": "忘れた傘",
+   "titleEn": "The Forgotten Umbrella",
+   "level": "N4",
+   "genre": "tokyo",
+   "draft": false,
+   "chars": 512,
+   "sentences": 32,
+   "mean": 16.0,
+   "p90": 26,
+   "kanji_ratio": 0.1699,
+   "kanji_types": 42,
+   "polite": 1.0,
+   "gram_by_level": {
+    "N5": 15,
+    "N4": 13,
+    "N3": 1,
+    "N2": 0,
+    "N1": 0
+   },
+   "gram_own": 10,
+   "gram_above": 1,
+   "gram_n4plus": 14,
+   "v2_warn": [
+    "v2 漢字割合 17%（N4 は 18%以上が目安）"
+   ],
+   "axes": {
+    "mean": {
+     "value": 16.0,
+     "L": 2.105,
+     "neq": 3.597,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 26,
+     "L": 1.8,
+     "neq": 3.8,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 42,
+     "L": 0.895,
+     "neq": 4.605,
+     "j": "down"
+    },
+    "g4": {
+     "value": 14,
+     "L": 2.161,
+     "neq": 3.559,
+     "j": "ok"
+    }
+   },
+   "L": 1.74,
+   "neq": 3.84,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 1,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n4-yoru-hachiji-no-waribiki-shiiru",
+   "title": "夜八時のわりびきシール",
+   "titleEn": "The Discount Sticker at Eight",
+   "level": "N4",
+   "genre": "true-ish",
+   "draft": false,
+   "chars": 646,
+   "sentences": 38,
+   "mean": 17.0,
+   "p90": 27,
+   "kanji_ratio": 0.195,
+   "kanji_types": 49,
+   "polite": 0.9737,
+   "gram_by_level": {
+    "N5": 13,
+    "N4": 18,
+    "N3": 4,
+    "N2": 0,
+    "N1": 1
+   },
+   "gram_own": 16,
+   "gram_above": 5,
+   "gram_n4plus": 23,
+   "v2_warn": [
+    "v2 平均文長 17.0字（N4 は 16字まで）"
+   ],
+   "axes": {
+    "mean": {
+     "value": 17.0,
+     "L": 2.293,
+     "neq": 3.471,
+     "j": "up"
+    },
+    "p90": {
+     "value": 27,
+     "L": 2.0,
+     "neq": 3.667,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 49,
+     "L": 1.312,
+     "neq": 4.188,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 23,
+     "L": 2.742,
+     "neq": 3.172,
+     "j": "up"
+    }
+   },
+   "L": 2.087,
+   "neq": 3.609,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 1,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n4-yuugata-no-buranko",
+   "title": "ゆうがたのブランコ",
+   "titleEn": "The Swing at Dusk",
+   "level": "N4",
+   "genre": "scary",
+   "draft": false,
+   "chars": 537,
+   "sentences": 38,
+   "mean": 14.13,
+   "p90": 23,
+   "kanji_ratio": 0.1434,
+   "kanji_types": 37,
+   "polite": 0.9211,
+   "gram_by_level": {
+    "N5": 11,
+    "N4": 12,
+    "N3": 2,
+    "N2": 1,
+    "N1": 0
+   },
+   "gram_own": 9,
+   "gram_above": 3,
+   "gram_n4plus": 15,
+   "v2_warn": [
+    "v2 漢字割合 14%（N4 は 18%以上が目安）"
+   ],
+   "axes": {
+    "mean": {
+     "value": 14.13,
+     "L": 1.316,
+     "neq": 4.184,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 23,
+     "L": 1.2,
+     "neq": 4.3,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 37,
+     "L": 0.632,
+     "neq": 4.868,
+     "j": "down"
+    },
+    "g4": {
+     "value": 15,
+     "L": 2.226,
+     "neq": 3.516,
+     "j": "ok"
+    }
+   },
+   "L": 1.343,
+   "neq": 4.157,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 1,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n5-ame-no-hi-no-neko",
+   "title": "雨の日のねこ",
+   "titleEn": "The Cat on a Rainy Day",
+   "level": "N5",
+   "genre": "slice-of-life",
+   "draft": false,
+   "chars": 261,
+   "sentences": 22,
+   "mean": 11.86,
+   "p90": 18,
+   "kanji_ratio": 0.1877,
+   "kanji_types": 23,
+   "polite": 1.0,
+   "gram_by_level": {
+    "N5": 9,
+    "N4": 0,
+    "N3": 0,
+    "N2": 0,
+    "N1": 0
+   },
+   "gram_own": 4,
+   "gram_above": 0,
+   "gram_n4plus": 0,
+   "v2_warn": [],
+   "axes": {
+    "mean": {
+     "value": 11.86,
+     "L": 0.394,
+     "neq": 5.071,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 18,
+     "L": 0.2,
+     "neq": 5.2,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 23,
+     "L": -0.1,
+     "neq": 5.4,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 0,
+     "L": -1.0,
+     "neq": 6.0,
+     "j": "down"
+    }
+   },
+   "L": -0.127,
+   "neq": 5.418,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 0,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n5-asakusa-no-omikuji",
+   "title": "あさくさの おみくじ",
+   "titleEn": "The Fortune Slip in Asakusa",
+   "level": "N5",
+   "genre": "tokyo",
+   "draft": false,
+   "chars": 377,
+   "sentences": 28,
+   "mean": 13.46,
+   "p90": 21,
+   "kanji_ratio": 0.1565,
+   "kanji_types": 34,
+   "polite": 1.0,
+   "gram_by_level": {
+    "N5": 7,
+    "N4": 2,
+    "N3": 0,
+    "N2": 0,
+    "N1": 0
+   },
+   "gram_own": 5,
+   "gram_above": 2,
+   "gram_n4plus": 2,
+   "v2_warn": [
+    "v2 平均文長 13.5字（N5 は 13字まで）",
+    "v2 文長P90 21字（N5 は 18字まで）"
+   ],
+   "axes": {
+    "mean": {
+     "value": 13.46,
+     "L": 0.977,
+     "neq": 4.523,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 21,
+     "L": 0.8,
+     "neq": 4.7,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 34,
+     "L": 0.474,
+     "neq": 5.018,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 2,
+     "L": 1.0,
+     "neq": 4.5,
+     "j": "ok"
+    }
+   },
+   "L": 0.813,
+   "neq": 4.687,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 2,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n5-ashita-no-shinbun",
+   "title": "あしたのしんぶん",
+   "titleEn": "Tomorrow's Newspaper",
+   "level": "N5",
+   "genre": "strange",
+   "draft": false,
+   "chars": 235,
+   "sentences": 17,
+   "mean": 13.82,
+   "p90": 19,
+   "kanji_ratio": 0.1489,
+   "kanji_types": 19,
+   "polite": 1.0,
+   "gram_by_level": {
+    "N5": 7,
+    "N4": 2,
+    "N3": 0,
+    "N2": 0,
+    "N1": 0
+   },
+   "gram_own": 4,
+   "gram_above": 2,
+   "gram_n4plus": 2,
+   "v2_warn": [
+    "v2 平均文長 13.8字（N5 は 13字まで）",
+    "v2 文長P90 19字（N5 は 18字まで）",
+    "v2 漢字割合 15%（N5 は 15%以上が目安）"
+   ],
+   "axes": {
+    "mean": {
+     "value": 13.82,
+     "L": 1.155,
+     "neq": 4.345,
+     "j": "up"
+    },
+    "p90": {
+     "value": 19,
+     "L": 0.4,
+     "neq": 5.067,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 19,
+     "L": -0.3,
+     "neq": 5.533,
+     "j": "down"
+    },
+    "g4": {
+     "value": 2,
+     "L": 1.0,
+     "neq": 4.5,
+     "j": "ok"
+    }
+   },
+   "L": 0.564,
+   "neq": 4.936,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 3,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n5-gacha-no-panda",
+   "title": "ガチャガチャのパンダ",
+   "titleEn": "The Panda from the Capsule Machine",
+   "level": "N5",
+   "genre": "anime-otaku",
+   "draft": false,
+   "chars": 376,
+   "sentences": 37,
+   "mean": 10.16,
+   "p90": 15,
+   "kanji_ratio": 0.1649,
+   "kanji_types": 35,
+   "polite": 0.8378,
+   "gram_by_level": {
+    "N5": 11,
+    "N4": 0,
+    "N3": 0,
+    "N2": 0,
+    "N1": 0
+   },
+   "gram_own": 7,
+   "gram_above": 0,
+   "gram_n4plus": 0,
+   "v2_warn": [],
+   "axes": {
+    "mean": {
+     "value": 10.16,
+     "L": -1.0,
+     "neq": 6.0,
+     "j": "down"
+    },
+    "p90": {
+     "value": 15,
+     "L": -0.8,
+     "neq": 5.867,
+     "j": "down"
+    },
+    "kt": {
+     "value": 35,
+     "L": 0.526,
+     "neq": 4.974,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 0,
+     "L": -1.0,
+     "neq": 6.0,
+     "j": "down"
+    }
+   },
+   "L": -0.568,
+   "neq": 5.712,
+   "j": "down",
+   "dev": 0.212,
+   "v2_n": 0,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n5-gomi-no-hi",
+   "title": "ごみの日",
+   "titleEn": "Trash Day",
+   "level": "N5",
+   "genre": "true-ish",
+   "draft": false,
+   "chars": 396,
+   "sentences": 32,
+   "mean": 12.38,
+   "p90": 18,
+   "kanji_ratio": 0.1717,
+   "kanji_types": 28,
+   "polite": 0.9062,
+   "gram_by_level": {
+    "N5": 7,
+    "N4": 3,
+    "N3": 0,
+    "N2": 1,
+    "N1": 1
+   },
+   "gram_own": 4,
+   "gram_above": 5,
+   "gram_n4plus": 5,
+   "v2_warn": [],
+   "axes": {
+    "mean": {
+     "value": 12.38,
+     "L": 0.583,
+     "neq": 4.917,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 18,
+     "L": 0.2,
+     "neq": 5.2,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 28,
+     "L": 0.158,
+     "neq": 5.228,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 5,
+     "L": 1.316,
+     "neq": 4.184,
+     "j": "up"
+    }
+   },
+   "L": 0.564,
+   "neq": 4.936,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 0,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n5-haha-no-tamagoyaki",
+   "title": "母のたまごやき",
+   "titleEn": "Mother's Rolled Omelet",
+   "level": "N5",
+   "genre": "food",
+   "draft": false,
+   "chars": 275,
+   "sentences": 23,
+   "mean": 11.96,
+   "p90": 17,
+   "kanji_ratio": 0.16,
+   "kanji_types": 17,
+   "polite": 1.0,
+   "gram_by_level": {
+    "N5": 11,
+    "N4": 0,
+    "N3": 1,
+    "N2": 0,
+    "N1": 1
+   },
+   "gram_own": 8,
+   "gram_above": 2,
+   "gram_n4plus": 2,
+   "v2_warn": [],
+   "axes": {
+    "mean": {
+     "value": 11.96,
+     "L": 0.43,
+     "neq": 5.047,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 17,
+     "L": 0.0,
+     "neq": 5.333,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 17,
+     "L": -0.4,
+     "neq": 5.6,
+     "j": "down"
+    },
+    "g4": {
+     "value": 2,
+     "L": 1.0,
+     "neq": 4.5,
+     "j": "ok"
+    }
+   },
+   "L": 0.257,
+   "neq": 5.162,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 0,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n5-kaidan-ga-hitotsu-ooi",
+   "title": "かいだんが 一つ おおい",
+   "titleEn": "One Step Too Many",
+   "level": "N5",
+   "genre": "strange",
+   "draft": true,
+   "chars": 347,
+   "sentences": 25,
+   "mean": 13.88,
+   "p90": 23,
+   "kanji_ratio": 0.1816,
+   "kanji_types": 27,
+   "polite": 0.92,
+   "gram_by_level": {
+    "N5": 6,
+    "N4": 0,
+    "N3": 0,
+    "N2": 0,
+    "N1": 0
+   },
+   "gram_own": 3,
+   "gram_above": 0,
+   "gram_n4plus": 0,
+   "v2_warn": [
+    "v2 平均文長 13.9字（N5 は 13字まで）",
+    "v2 文長P90 23字（N5 は 18字まで）"
+   ],
+   "axes": {
+    "mean": {
+     "value": 13.88,
+     "L": 1.186,
+     "neq": 4.314,
+     "j": "up"
+    },
+    "p90": {
+     "value": 23,
+     "L": 1.2,
+     "neq": 4.3,
+     "j": "up"
+    },
+    "kt": {
+     "value": 27,
+     "L": 0.105,
+     "neq": 5.263,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 0,
+     "L": -1.0,
+     "neq": 6.0,
+     "j": "down"
+    }
+   },
+   "L": 0.373,
+   "neq": 5.085,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 2,
+   "ok_url": false,
+   "live": false
+  },
+  {
+   "slug": "n5-konbini-no-onigiri",
+   "title": "コンビニのおにぎり",
+   "titleEn": "Rice Balls at the Convenience Store",
+   "level": "N5",
+   "genre": "food",
+   "draft": false,
+   "chars": 245,
+   "sentences": 23,
+   "mean": 10.65,
+   "p90": 17,
+   "kanji_ratio": 0.1224,
+   "kanji_types": 21,
+   "polite": 0.913,
+   "gram_by_level": {
+    "N5": 6,
+    "N4": 1,
+    "N3": 0,
+    "N2": 0,
+    "N1": 0
+   },
+   "gram_own": 4,
+   "gram_above": 1,
+   "gram_n4plus": 1,
+   "v2_warn": [
+    "v2 漢字割合 12%（N5 は 15%以上が目安）"
+   ],
+   "axes": {
+    "mean": {
+     "value": 10.65,
+     "L": -0.282,
+     "neq": 5.522,
+     "j": "down"
+    },
+    "p90": {
+     "value": 17,
+     "L": 0.0,
+     "neq": 5.333,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 21,
+     "L": -0.2,
+     "neq": 5.467,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 1,
+     "L": 0.0,
+     "neq": 5.333,
+     "j": "ok"
+    }
+   },
+   "L": -0.121,
+   "neq": 5.414,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 1,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n5-mado-no-shiroi-kao",
+   "title": "まどの白いかお",
+   "titleEn": "The White Face at the Window",
+   "level": "N5",
+   "genre": "scary",
+   "draft": true,
+   "chars": 326,
+   "sentences": 34,
+   "mean": 9.59,
+   "p90": 14,
+   "kanji_ratio": 0.1472,
+   "kanji_types": 27,
+   "polite": 0.8529,
+   "gram_by_level": {
+    "N5": 8,
+    "N4": 1,
+    "N3": 0,
+    "N2": 0,
+    "N1": 1
+   },
+   "gram_own": 5,
+   "gram_above": 2,
+   "gram_n4plus": 2,
+   "v2_warn": [
+    "v2 漢字割合 15%（N5 は 15%以上が目安）"
+   ],
+   "axes": {
+    "mean": {
+     "value": 9.59,
+     "L": -1.0,
+     "neq": 6.0,
+     "j": "down"
+    },
+    "p90": {
+     "value": 14,
+     "L": -1.0,
+     "neq": 6.0,
+     "j": "down"
+    },
+    "kt": {
+     "value": 27,
+     "L": 0.105,
+     "neq": 5.263,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 2,
+     "L": 1.0,
+     "neq": 4.5,
+     "j": "ok"
+    }
+   },
+   "L": -0.224,
+   "neq": 5.482,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 1,
+   "ok_url": false,
+   "live": false
+  },
+  {
+   "slug": "n5-megane-wa-doko",
+   "title": "めがねはどこ",
+   "titleEn": "Where Are My Glasses?",
+   "level": "N5",
+   "genre": "funny",
+   "draft": false,
+   "chars": 393,
+   "sentences": 28,
+   "mean": 14.04,
+   "p90": 21,
+   "kanji_ratio": 0.1094,
+   "kanji_types": 21,
+   "polite": 0.9643,
+   "gram_by_level": {
+    "N5": 10,
+    "N4": 1,
+    "N3": 1,
+    "N2": 0,
+    "N1": 0
+   },
+   "gram_own": 7,
+   "gram_above": 2,
+   "gram_n4plus": 2,
+   "v2_warn": [
+    "v2 平均文長 14.0字（N5 は 13字まで）",
+    "v2 文長P90 21字（N5 は 18字まで）",
+    "v2 漢字割合 11%（N5 は 15%以上が目安）"
+   ],
+   "axes": {
+    "mean": {
+     "value": 14.04,
+     "L": 1.269,
+     "neq": 4.231,
+     "j": "up"
+    },
+    "p90": {
+     "value": 21,
+     "L": 0.8,
+     "neq": 4.7,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 21,
+     "L": -0.2,
+     "neq": 5.467,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 2,
+     "L": 1.0,
+     "neq": 4.5,
+     "j": "ok"
+    }
+   },
+   "L": 0.717,
+   "neq": 4.783,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 3,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n5-momotaro",
+   "title": "ももたろう",
+   "titleEn": "Momotaro, the Peach Boy",
+   "level": "N5",
+   "genre": "folk-tale",
+   "draft": true,
+   "chars": 373,
+   "sentences": 26,
+   "mean": 14.35,
+   "p90": 21,
+   "kanji_ratio": 0.1609,
+   "kanji_types": 31,
+   "polite": 1.0,
+   "gram_by_level": {
+    "N5": 12,
+    "N4": 2,
+    "N3": 0,
+    "N2": 0,
+    "N1": 0
+   },
+   "gram_own": 11,
+   "gram_above": 2,
+   "gram_n4plus": 2,
+   "v2_warn": [
+    "v2 平均文長 14.3字（N5 は 13字まで）",
+    "v2 文長P90 21字（N5 は 18字まで）"
+   ],
+   "axes": {
+    "mean": {
+     "value": 14.35,
+     "L": 1.431,
+     "neq": 4.069,
+     "j": "up"
+    },
+    "p90": {
+     "value": 21,
+     "L": 0.8,
+     "neq": 4.7,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 31,
+     "L": 0.316,
+     "neq": 5.123,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 2,
+     "L": 1.0,
+     "neq": 4.5,
+     "j": "ok"
+    }
+   },
+   "L": 0.887,
+   "neq": 4.613,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 2,
+   "ok_url": false,
+   "live": false
+  },
+  {
+   "slug": "n5-nichiyoubi-no-panya",
+   "title": "にちようびのパンや",
+   "titleEn": "The Bakery on Sunday",
+   "level": "N5",
+   "genre": "food",
+   "draft": false,
+   "chars": 313,
+   "sentences": 28,
+   "mean": 11.18,
+   "p90": 16,
+   "kanji_ratio": 0.1502,
+   "kanji_types": 25,
+   "polite": 0.9286,
+   "gram_by_level": {
+    "N5": 12,
+    "N4": 1,
+    "N3": 0,
+    "N2": 0,
+    "N1": 0
+   },
+   "gram_own": 7,
+   "gram_above": 1,
+   "gram_n4plus": 1,
+   "v2_warn": [],
+   "axes": {
+    "mean": {
+     "value": 11.18,
+     "L": 0.146,
+     "neq": 5.236,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 16,
+     "L": -0.4,
+     "neq": 5.6,
+     "j": "down"
+    },
+    "kt": {
+     "value": 25,
+     "L": 0.0,
+     "neq": 5.333,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 1,
+     "L": 0.0,
+     "neq": 5.333,
+     "j": "ok"
+    }
+   },
+   "L": -0.064,
+   "neq": 5.376,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 0,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n5-sentakuki-no-kutsushita",
+   "title": "せんたくきのくつした",
+   "titleEn": "The Sock and the Washing Machine",
+   "level": "N5",
+   "genre": "funny",
+   "draft": false,
+   "chars": 282,
+   "sentences": 21,
+   "mean": 13.43,
+   "p90": 19,
+   "kanji_ratio": 0.117,
+   "kanji_types": 19,
+   "polite": 1.0,
+   "gram_by_level": {
+    "N5": 10,
+    "N4": 0,
+    "N3": 2,
+    "N2": 0,
+    "N1": 0
+   },
+   "gram_own": 6,
+   "gram_above": 2,
+   "gram_n4plus": 2,
+   "v2_warn": [
+    "v2 平均文長 13.4字（N5 は 13字まで）",
+    "v2 文長P90 19字（N5 は 18字まで）",
+    "v2 漢字割合 12%（N5 は 15%以上が目安）"
+   ],
+   "axes": {
+    "mean": {
+     "value": 13.43,
+     "L": 0.966,
+     "neq": 4.534,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 19,
+     "L": 0.4,
+     "neq": 5.067,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 19,
+     "L": -0.3,
+     "neq": 5.533,
+     "j": "down"
+    },
+    "g4": {
+     "value": 2,
+     "L": 1.0,
+     "neq": 4.5,
+     "j": "ok"
+    }
+   },
+   "L": 0.516,
+   "neq": 4.984,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 3,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n5-takoyaki-no-mise",
+   "title": "たこやきの店",
+   "titleEn": "The Takoyaki Shop",
+   "level": "N5",
+   "genre": "food",
+   "draft": false,
+   "chars": 303,
+   "sentences": 26,
+   "mean": 11.65,
+   "p90": 17,
+   "kanji_ratio": 0.1584,
+   "kanji_types": 23,
+   "polite": 0.9231,
+   "gram_by_level": {
+    "N5": 6,
+    "N4": 1,
+    "N3": 1,
+    "N2": 0,
+    "N1": 0
+   },
+   "gram_own": 3,
+   "gram_above": 2,
+   "gram_n4plus": 2,
+   "v2_warn": [],
+   "axes": {
+    "mean": {
+     "value": 11.65,
+     "L": 0.317,
+     "neq": 5.122,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 17,
+     "L": 0.0,
+     "neq": 5.333,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 23,
+     "L": -0.1,
+     "neq": 5.4,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 2,
+     "L": 1.0,
+     "neq": 4.5,
+     "j": "ok"
+    }
+   },
+   "L": 0.304,
+   "neq": 5.131,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 0,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n5-tokyo-eki-no-michi",
+   "title": "えきのでぐちはどこですか",
+   "titleEn": "Which Exit Is It?",
+   "level": "N5",
+   "genre": "tokyo",
+   "draft": false,
+   "chars": 283,
+   "sentences": 26,
+   "mean": 10.88,
+   "p90": 17,
+   "kanji_ratio": 0.0883,
+   "kanji_types": 15,
+   "polite": 0.9615,
+   "gram_by_level": {
+    "N5": 8,
+    "N4": 2,
+    "N3": 0,
+    "N2": 0,
+    "N1": 0
+   },
+   "gram_own": 6,
+   "gram_above": 2,
+   "gram_n4plus": 2,
+   "v2_warn": [
+    "v2 漢字割合 9%（N5 は 15%以上が目安）"
+   ],
+   "axes": {
+    "mean": {
+     "value": 10.88,
+     "L": 0.036,
+     "neq": 5.309,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 17,
+     "L": 0.0,
+     "neq": 5.333,
+     "j": "ok"
+    },
+    "kt": {
+     "value": 15,
+     "L": -0.5,
+     "neq": 5.667,
+     "j": "down"
+    },
+    "g4": {
+     "value": 2,
+     "L": 1.0,
+     "neq": 4.5,
+     "j": "ok"
+    }
+   },
+   "L": 0.134,
+   "neq": 5.244,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 1,
+   "ok_url": true,
+   "live": true
+  },
+  {
+   "slug": "n5-yoru-no-erebeta",
+   "title": "夜のエレベーター",
+   "titleEn": "The Elevator at Night",
+   "level": "N5",
+   "genre": "scary",
+   "draft": false,
+   "chars": 339,
+   "sentences": 31,
+   "mean": 10.94,
+   "p90": 15,
+   "kanji_ratio": 0.1475,
+   "kanji_types": 29,
+   "polite": 0.9355,
+   "gram_by_level": {
+    "N5": 7,
+    "N4": 1,
+    "N3": 0,
+    "N2": 0,
+    "N1": 0
+   },
+   "gram_own": 5,
+   "gram_above": 1,
+   "gram_n4plus": 1,
+   "v2_warn": [
+    "v2 漢字割合 15%（N5 は 15%以上が目安）"
+   ],
+   "axes": {
+    "mean": {
+     "value": 10.94,
+     "L": 0.058,
+     "neq": 5.295,
+     "j": "ok"
+    },
+    "p90": {
+     "value": 15,
+     "L": -0.8,
+     "neq": 5.867,
+     "j": "down"
+    },
+    "kt": {
+     "value": 29,
+     "L": 0.211,
+     "neq": 5.193,
+     "j": "ok"
+    },
+    "g4": {
+     "value": 1,
+     "L": 0.0,
+     "neq": 5.333,
+     "j": "ok"
+    }
+   },
+   "L": -0.133,
+   "neq": 5.422,
+   "j": "ok",
+   "dev": 0.0,
+   "v2_n": 1,
+   "ok_url": true,
+   "live": true
+  }
+ ],
+ "method": {
+  "axes": {
+   "mean": "平均文長",
+   "p90": "文長P90",
+   "kt": "異なり漢字数",
+   "g4": "N4以上の文法の種類数"
+  },
+  "tadoku_medians": {
+   "mean": {
+    "start": 10.3182,
+    "0": 10.7805,
+    "1": 13.5238,
+    "2": 15.4406,
+    "3": 20.764,
+    "4": 25.283
+   },
+   "p90": {
+    "start": 14.5,
+    "0": 17.0,
+    "1": 22.0,
+    "2": 27.0,
+    "3": 32.5,
+    "4": 42.0
+   },
+   "kt": {
+    "start": 5.0,
+    "0": 25.0,
+    "1": 44.0,
+    "2": 60.0,
+    "3": 129.0,
+    "4": 147.0
+   },
+   "g4": {
+    "start": 0.0,
+    "0": 1.0,
+    "1": 2.0,
+    "2": 11.5,
+    "3": 27.0,
+    "4": 44.0
+   }
+  },
+  "tadoku_keys": [
+   "start",
+   "0",
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "l_to_n": [
+   [
+    -1,
+    6.0
+   ],
+   [
+    0.5,
+    5.0
+   ],
+   [
+    1.5,
+    4.0
+   ],
+   [
+    3.0,
+    3.0
+   ],
+   [
+    4.0,
+    2.0
+   ]
+  ],
+  "ticks": {
+   "mean": {
+    "N5": [
+     {
+      "L": "0",
+      "v": 10.7805
+     },
+     {
+      "L": "1",
+      "v": 13.5238
+     }
+    ],
+    "N4": [
+     {
+      "L": "1",
+      "v": 13.5238
+     },
+     {
+      "L": "2",
+      "v": 15.4406
+     }
+    ],
+    "N3": [
+     {
+      "L": "3",
+      "v": 20.764
+     }
+    ],
+    "N2": [
+     {
+      "L": "4",
+      "v": 25.283
+     }
+    ],
+    "N1": []
+   },
+   "p90": {
+    "N5": [
+     {
+      "L": "0",
+      "v": 17.0
+     },
+     {
+      "L": "1",
+      "v": 22.0
+     }
+    ],
+    "N4": [
+     {
+      "L": "1",
+      "v": 22.0
+     },
+     {
+      "L": "2",
+      "v": 27.0
+     }
+    ],
+    "N3": [
+     {
+      "L": "3",
+      "v": 32.5
+     }
+    ],
+    "N2": [
+     {
+      "L": "4",
+      "v": 42.0
+     }
+    ],
+    "N1": []
+   },
+   "kanji_ratio": {
+    "N5": [
+     {
+      "L": "0",
+      "v": 0.2039
+     },
+     {
+      "L": "1",
+      "v": 0.1941
+     }
+    ],
+    "N4": [
+     {
+      "L": "1",
+      "v": 0.1941
+     },
+     {
+      "L": "2",
+      "v": 0.2495
+     }
+    ],
+    "N3": [
+     {
+      "L": "3",
+      "v": 0.2629
+     }
+    ],
+    "N2": [
+     {
+      "L": "4",
+      "v": 0.2552
+     }
+    ],
+    "N1": []
+   },
+   "polite": {
+    "N5": [
+     {
+      "L": "0",
+      "v": 0.6515
+     },
+     {
+      "L": "1",
+      "v": 0.76
+     }
+    ],
+    "N4": [
+     {
+      "L": "1",
+      "v": 0.76
+     },
+     {
+      "L": "2",
+      "v": 0.7364
+     }
+    ],
+    "N3": [
+     {
+      "L": "3",
+      "v": 0.8311
+     }
+    ],
+    "N2": [
+     {
+      "L": "4",
+      "v": 0.9493
+     }
+    ],
+    "N1": []
+   },
+   "kt": {
+    "N5": [
+     {
+      "L": "0",
+      "v": 25.0
+     },
+     {
+      "L": "1",
+      "v": 44.0
+     }
+    ],
+    "N4": [
+     {
+      "L": "1",
+      "v": 44.0
+     },
+     {
+      "L": "2",
+      "v": 60.0
+     }
+    ],
+    "N3": [
+     {
+      "L": "3",
+      "v": 129.0
+     }
+    ],
+    "N2": [
+     {
+      "L": "4",
+      "v": 147.0
+     }
+    ],
+    "N1": []
+   },
+   "g4": {
+    "N5": [
+     {
+      "L": "0",
+      "v": 1.0
+     },
+     {
+      "L": "1",
+      "v": 2.0
+     }
+    ],
+    "N4": [
+     {
+      "L": "1",
+      "v": 2.0
+     },
+     {
+      "L": "2",
+      "v": 11.5
+     }
+    ],
+    "N3": [
+     {
+      "L": "3",
+      "v": 27.0
+     }
+    ],
+    "N2": [
+     {
+      "L": "4",
+      "v": 44.0
+     }
+    ],
+    "N1": []
+   }
+  },
+  "tadoku_n_books": {
+   "start": 7,
+   "0": 27,
+   "1": 16,
+   "2": 14,
+   "3": 19,
+   "4": 7
+  }
+ },
+ "n_live": 47
+}
