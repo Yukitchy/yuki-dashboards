@@ -17,7 +17,7 @@
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
 body{margin:0;background:#fff;color:var(--ink);font:400 16px/1.85 Inter,"Zen Kaku Gothic New","Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;
-  -webkit-font-smoothing:antialiased;font-feature-settings:"palt";word-break:auto-phrase;line-break:strict;overflow-wrap:anywhere}
+  -webkit-font-smoothing:antialiased;font-feature-settings:"palt";word-break:keep-all;line-break:strict;overflow-wrap:anywhere}
 [hidden]{display:none!important}
 a{color:inherit}
 h1,h2,h3{margin:0;line-height:1.35;letter-spacing:-.01em;text-wrap:balance}
@@ -31,7 +31,7 @@ small{font-size:13px}
 .head{padding:36px 0 8px}
 .back{font-size:14px;color:var(--dim);text-decoration:none;border-bottom:1px solid var(--line)}
 .back:hover{color:var(--ink);border-color:var(--ink)}
-h1{font-size:clamp(30px,6.4vw,60px);font-weight:700;letter-spacing:-.02em;line-height:1.25;margin:26px 0 14px}
+h1{font-size:clamp(30px,6.4vw,60px);font-weight:700;letter-spacing:-.03em;line-height:1.25;margin:26px 0 14px}
 .lead{max-width:40em;font-size:16px;color:#333}
 .kpis{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:0 clamp(24px,6vw,72px);margin:34px 0 14px;padding-top:22px;border-top:2px solid var(--ink)}
 .kpi{display:flex;flex-direction:column}
@@ -142,7 +142,7 @@ a.tt:hover{text-decoration-color:var(--ink)}
 footer{margin-top:84px;padding:0 0 56px;font-size:14px;color:var(--dim)}
 footer .fi{display:flex;flex-wrap:wrap;gap:6px 26px;padding-top:18px;border-top:2px solid var(--ink)}
 
-@media(max-width:1020px){
+@media(max-width:1100px){
   .panels{grid-template-columns:1fr}
   .tbl.bks thead,.tbl.sum thead{display:none}
   .tbl.bks,.tbl.bks tbody,.tbl.sum,.tbl.sum tbody{display:block}
@@ -176,8 +176,8 @@ footer .fi{display:flex;flex-wrap:wrap;gap:6px 26px;padding-top:18px;border-top:
 <body>
 <header class="head"><div class="wrap">
   <a class="back" href="../">ダッシュボード図鑑</a>
-  <h1><span class="nb">読み物の</span><span class="nb">級分けレポート</span></h1>
-  <p class="lead">animesenseijp.com の読み物 @@NALL@@冊を、tadoku の級別 91冊の実測に当てて、書かれた級どおりに読めるかを判定しました。</p>
+  <h1><span class="nb">読み物の</span><wbr><span class="nb">級分けレポート</span></h1>
+  <p class="lead"><span class="nb">animesenseijp.com</span> の読み物 @@NALL@@冊を、tadoku の級別 91冊の実測に当てて、書かれた級どおりに読めるかを判定しました。</p>
   <div class="kpis">@@KPI@@</div>
   <p class="meta">公開中 @@NLIVE@@冊と未公開 @@NDRAFT@@冊の本文を @@DATE@@ の時点で計算</p>
 </div></header>
@@ -248,9 +248,9 @@ footer .fi{display:flex;flex-wrap:wrap;gap:6px 26px;padding-top:18px;border-top:
   <h2>判定のしかた</h2>
   <h3>手順</h3>
   <ol>
-    <li>各冊の本文（物語の部分）から、字数・文の数・平均文長・文長P90・漢字割合・異なり漢字数・です・ます文の割合を数えます。文の分け方と字種の数え方は、library_check.py の物差し v2 と同じ式です。</li>
+    <li>各冊の本文（物語の部分）から、字数・文の数・平均文長・文長P90・漢字割合・異なり漢字数・です・ます文の割合を数えます。文の分け方と字種の数え方は、<span class="nb">library_check.py</span> の物差し v2 と同じ式です。</li>
     <li>JLPT文法の検出正規表現（848項目）を当て、級ごとに何種類あたったかを数えます。自級の文法は、ありふれた語（だ・です、こと、も、と など）を除いた種類数です。</li>
-    <li>平均文長・文長P90・異なり漢字数・N4以上の文法の種類数の4つを、下の tadoku 級別中央値のあいだで線形に補間して L の値にします。4つの平均を、L0.5=N5、L1.5=N4、L3=N3、L4=N2 の折れ線で N換算にします。</li>
+    <li>平均文長・文長P90・異なり漢字数・N4以上の文法の種類数の4つを、下の tadoku 級別中央値のあいだで線形に補間して L の値にします。4つの平均は、N5 を L0.5、N4 を L1.5、N3 を L3、N2 を L4 とする折れ線で N換算にします。</li>
     <li>N換算を四捨五入した級が現級より難しければ「1つ上に見える」、易しければ「1つ下に見える」です。つまり現級の帯は N±0.5 で、はみ出した距離で次に直す本を並べます。</li>
   </ol>
   <h3>換算に使った tadoku の級別中央値</h3>
@@ -269,8 +269,8 @@ footer .fi{display:flex;flex-wrap:wrap;gap:6px 26px;padding-top:18px;border-top:
   <h3>出どころ</h3>
   <ul>
     <li>tadoku.org の段階別読み物 91冊の実測値（数値だけを使い、原文は保存していません）</li>
-    <li>JLPT文法カタログ 848項目（grammar_catalog.json）</li>
-    <li>読み物の本文は animesenseijp.com の読み物本棚。全冊の数字は <a href="data.json">data.json</a> にあります。</li>
+    <li>JLPT文法カタログ 848項目（<span class="nb">grammar_catalog.json</span>）</li>
+    <li>読み物の本文は <span class="nb">animesenseijp.com</span> の読み物本棚です。全冊の数字は <a href="data.json">data.json</a> にあります。</li>
   </ul>
 </section>
 

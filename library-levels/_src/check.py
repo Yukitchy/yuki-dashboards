@@ -21,7 +21,7 @@ SHOTS = pathlib.Path(args[args.index("--shots") + 1]) if "--shots" in args else 
 
 D = json.load(open(OUT / "data.json"))
 B = D["books"]
-HTML = (OUT / "index.html").read_text(encoding="utf-8")
+HTML = (OUT / "index.html").read_text(encoding="utf-8").replace("<wbr>", "")   # 文節の焼き込み(<wbr>)は構造の照合から除く
 R = []   # (id, 名前, ok, 証拠)
 
 

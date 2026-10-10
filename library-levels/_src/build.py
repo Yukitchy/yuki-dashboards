@@ -2,8 +2,13 @@
 """読み物の級分けレポートを index.html（単一ファイル）に書く。data.json は analyze.py が作る。
   python3 build.py [--offline]   # 公開中かどうかは本番URLへ HEAD して決める（--offline なら原稿の draft を使う）
 """
-import json, html, sys, urllib.request, concurrent.futures, pathlib
+import json, html, re, sys, urllib.request, concurrent.futures, pathlib
 import analyze
+try:
+    import budoux
+    PARSER = budoux.load_default_japanese_parser()
+except ImportError:      # 無ければ文節の焼き込みなしで出す（3.11 の python で実行すると入っている）
+    PARSER = None
 
 HERE = pathlib.Path(__file__).parent          # _src（GitHub Pages の Jekyll は _ 始まりを配信しない）
 OUT = HERE.parent                              # 公開物（index.html / data.json）の置き場
@@ -52,11 +57,35 @@ def reason(b):
     offs = [a for a, x in b["axes"].items() if x["j"] == j]
     fmt = {"mean": lambda v: f"{v:.1f}字", "p90": lambda v: f"{v:g}字", "kt": lambda v: f"{v:g}字", "g4": lambda v: f"{v:g}種"}
     if offs:
-        s2 = "帯を外れた指標は " + "、".join(f"{nb(AX[a])} {nb(fmt[a](b['axes'][a]['value']))}（{nb(neq_word(b['axes'][a]['neq']))}）" for a in offs) + "。"
+        items = []
+        for k, a in enumerate(offs):
+            end = "。" if k == len(offs) - 1 else "、"
+            items.append(f"{nb(AX[a])} {nb(fmt[a](b['axes'][a]['value']) + '（' + neq_word(b['axes'][a]['neq']) + '）' + end)}")
+        s2 = "帯を外れた指標は " + "<wbr>".join(items)
     else:
         s2 = "どの指標も単独では帯の内側で、4つを合わせると外に出ました。"
-    s3 = f"目安は平均文長 {nb(v2['mean'])}・P90 {nb(v2['p90'])}。この本は {nb('%.1f字' % b['mean'])}・{nb('%d字' % b['p90'])}です。"
+    s3 = f"目安は{nb('平均文長 ' + v2['mean'])}・{nb('P90 ' + v2['p90'])}。この本は{nb('平均文長 %.1f字' % b['mean'])}・{nb('P90 %d字' % b['p90'])}です。"
     return s1 + s2, s3
+
+
+JP = re.compile(r"[぀-ヿ一-鿿]")
+
+
+def bud(page):
+    """本文（<body> 以降）の日本語の文字列を BudouX で文節に割り、切れ目に <wbr> を入れる。CSS は word-break:keep-all"""
+    if PARSER is None: return page
+    i = page.index("<body>")
+    parts = re.split(r"(<script.*?</script>|<style.*?</style>|<[^>]+>|&[#\w]+;)", page[i:], flags=re.S)
+    out, in_nb = [], False
+    for p in parts:
+        if p == '<span class="nb">': in_nb = True
+        elif p == "</span>": in_nb = False
+        if in_nb or p.startswith("<") or p.startswith("&") or not JP.search(p): out.append(p)   # nowrap の塊の中には入れない（Safari は nowrap 内の <wbr> で折る）
+        else: out.append("<wbr>".join(PARSER.parse(p)))
+    res = "".join(out)
+    res = re.sub(r"<wbr>(?=[、。，．）」』！？%])", "", res)      # 句読点・閉じかっこの前では折らない
+    res = re.sub(r"(?<=[（「『])<wbr>", "", res)                # 開きかっこの直後でも折らない
+    return page[:i] + res
 
 
 def main():
@@ -96,7 +125,7 @@ def main():
     for l in D["levels"]:
         lv = l["level"]; tl = l["tadoku_levels"]
         tname = "対応級なし" if not tl else ("L" + "〜".join(tl))
-        outs = "、".join(esc(by[s]["title"]) + f'（{JMARK[by[s]["j"]]}）' for s in l["outliers"]) or "なし"
+        outs = "".join(nb(by[s]["title"] + f'（{JMARK[by[s]["j"]]}）' + ("、" if k < len(l["outliers"]) - 1 else "")) for k, s in enumerate(l["outliers"])) or "なし"
         draft = f'（未公開 {l["n"] - sum(by[b["slug"]]["live"] for b in books if b["level"] == lv)}）'
         rows += (f'<tr><th scope="row"><span class="lv">{lv}</span><small>tadoku {tname}</small></th>'
                  f'<td data-l="冊数" class="num">{l["n"]}</td>'
@@ -145,6 +174,7 @@ def main():
         "DATA": json.dumps(D, ensure_ascii=False).replace("</", "<\\/"),
     }.items():
         page = page.replace(f"@@{k}@@", v)
+    page = bud(page)
     (OUT / "index.html").write_text(page, encoding="utf-8")
     print("wrote index.html", len(page), "bytes; live", n_live, "/", n_all, "counts", c)
 
