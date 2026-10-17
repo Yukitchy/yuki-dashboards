@@ -121,7 +121,6 @@ rec(4, "判定は3値のみで合計70、冒頭の集計表示がデータと一
 
 # 5 NEXT3
 fl = sorted([b for b in B if b["j"] != "ok"], key=lambda b: (-b["dev"], b["draft"]))[:3]
-nx = re.findall(r'<li id="n\d"><span class="rkn">\d</span><div class="nb-body"><h3><span class="lv">(N\d)</span> (?:<a[^>]*>)?<?s?[^>]*?>?([^<]+)', HTML)
 nx_titles = re.findall(r'<li id="n\d">.*?<h3><span class="lv">N\d</span> (?:<a [^>]*>([^<]+)</a>|<span class="tt ">([^<]+)</span>)', HTML)
 nx_titles = [a or b for a, b in nx_titles]
 okp = all(re.search(r"<p>tadoku に当てると .+?</p><p class=\"dim\">目安は", seg) for seg in re.findall(r'<li id="n\d">.*?</li>', HTML))
